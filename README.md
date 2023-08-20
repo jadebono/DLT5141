@@ -44,6 +44,8 @@
   - Ganache for local blockchain development
   - Metamask for Ethereum transactions
 
+Note: Ascertain whether to use Hardhat or Truffle. If Hardhat modify this section
+
 ## 6. Building a Simple Smart Contract
 
 - **Designing a basic contract** (e.g., a voting system or a simple token)
