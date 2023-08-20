@@ -79,10 +79,6 @@
 - **Interactive Webpage Elements:**
 
   - Creating a button that changes text on a webpage.
-  - Building a simple image carousel.
-  - Implementing a basic form validation.
 
 - **Mini Projects:**
-  - Building a to-do list application.
-  - Creating a simple calculator.
-  - Designing a basic quiz game.
+  - Creating a web page with two input boxes to take integers and one output box to display the sum of the inputted integers. Should include error checking to ensure that the inputted data consists of either valid integers or valid floats.
