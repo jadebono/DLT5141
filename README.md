@@ -95,4 +95,8 @@ Note: Ascertain whether to use Hardhat or Truffle. If Hardhat modify this sectio
 
 - [Fiddle](https://jsfiddle.net/)
 - [Replit](https://replit.com/)
-- [Playcode](https://playcode.io/)
+- [Playcode](https://playcode.io/) (Preferable)
+
+## 14 Docs
+
+- [devdocs](https://devdocs.io/)
