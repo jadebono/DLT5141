@@ -43,6 +43,7 @@
   - Truffle framework
   - Ganache for local blockchain development
   - Metamask for Ethereum transactions
+  - Basic overview and walkthrough Ethers.js
 
 Note: Ascertain whether to use Hardhat or Truffle. If Hardhat modify this section
 
