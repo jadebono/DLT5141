@@ -90,3 +90,9 @@ Note: Ascertain whether to use Hardhat or Truffle. If Hardhat modify this sectio
 
 - **Students work in groups to design, build, and present a simple DApp**
 - **Review and feedback session**
+
+## 13. Online Tools
+
+- [Fiddle](https://jsfiddle.net/)
+- [Replit](https://replit.com/)
+- [Playcode](https://playcode.io/)
