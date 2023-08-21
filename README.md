@@ -7,13 +7,14 @@
 ## `2. Basics of HTML`
 
 - **Basics of HTML**
+
   - Structure of an HTML document
   - Common tags and their usage
   - Forms and input elements
 
-[Basics of tags, attributes and values](/html/docs.md)
-[HTML Exercises](/html/html.md)
-[Jamie Oliver's Roast Leg of Lamb](/html/index.html)
+- [Basics of tags, attributes and values](/html/docs.md)
+- [HTML Exercises](/html/html.md)
+- [Jamie Oliver's Roast Leg of Lamb](/html/index.html)
 
 ## `2. Basics of CSS`
 
