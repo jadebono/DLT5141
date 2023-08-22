@@ -5,79 +5,119 @@
 ![The HTML DOM Tree of Objects](https://www.w3schools.com/js/pic_htmltree.gif)  
 Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_htmldom.asp)
 
-## 'Doctype Declaration'
+---
+
+## `Doctype Declaration`
 
 <!DOCTYPE html>
 
-## 'html element'
+---
 
-### 'attribute: lang:
+## `html element`
 
-## 'head element'
+### `attribute: lang:`
 
-## 'title element'
+---
 
-## 'body element'
+## `head element`
 
-## 'h elements
+---
 
-## 'p elements'
+## `title element`
 
-## 'ul elements with li element'
+---
 
-## 'ol elements with li element'
+## `body element`
 
-## 'table element'
+---
 
-### 'thead element'
+## `h elements`
 
-### 'tbody element'
+---
 
-### 'tr element'
+## `p elements`
 
-### 'td element'
+---
 
-## 'img element'
+## `ul elements with li element`
 
-### 'attribute: src'
+---
 
-## 'a element'
+## `ol elements with li element`
 
-### 'attribute: href'
+---
 
-### 'attribute: target'
+## `table element`
 
-## 'video element'
+### `thead element`
 
-### 'attribute: source'
+### `tbody element`
 
-### 'attribute: type'
+### `tr element`
 
-### 'attribute: autoplay'
+### `td element`
 
-### 'attribute: loop'
+---
 
-### 'attribute: muted'
+## `img element`
 
-### 'attribute: width'
+### `attribute: src`
 
-## 'iframe element'
+---
 
-### 'attribute: source'
+## `a element`
 
-### 'attribute: allowfullscreen'
+### `attribute: href`
 
-## 'div element'
+### `attribute: target`
 
-## 'section element'
+---
 
-## 'footer elements'
+## `video element`
 
-## 'Validation'
+### `attribute: source`
+
+### `attribute: type`
+
+### `attribute: autoplay`
+
+### `attribute: loop`
+
+### `attribute: muted`
+
+### `attribute: width`
+
+---
+
+## `iframe element`
+
+### `attribute: source`
+
+### `attribute: allowfullscreen`
+
+---
+
+## `div element`
+
+---
+
+## `section element`
+
+---
+
+## `footer elements`
+
+---
+
+## `Validation`
 
 [Markup Validation Service](https://validator.w3.org/)
+
+---
 
 ## `Useful Links`
 
 [Emmet Documentation](https://docs.emmet.io/)  
 [Mozilla Developer Resources](https://developer.mozilla.org/)
+
+---
