@@ -174,19 +174,133 @@ The body element represents the main content of an HTML document. There can be o
 
 ---
 
+## `Important Notes`
+
+1. All subsequent elements and tags go in the body element.
+1. Block-level elements vs inline elements:
+   - A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). An example of a block-level element is the p element;
+   - An inline element does not start on a new line and only takes up as much width as necessary. An example of an inline-level element is the a element.
+
+---
+
 ## `h elements`
+
+The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the lowest. The h elements are
+
+```html
+<h1>Infraorder:	Simiiformes</1>
+<h2>Family:	Hominidae</h2>
+<h3>Subfamily: Homininae</h3>
+<h4>Tribe: Hominini</h4>
+<h5>Genus: Homo</h5>
+<h6>Species: Homo sapiens</h6>
+
+```
 
 ---
 
 ## `p elements`
 
+The p element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+```html
+<p>
+  [1] I. Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam
+  furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia?
+  Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae, nihil timor
+  populi, nihil concursus bonorum omnium, nihil hic munitissimus habendi senatus
+  locus, nihil horum ora voltusque moverunt? Patere tua consilia non sentis,
+  constrictam iam horum omnium scientia teneri coniurationem tuam non vides?
+  Quid proxima, quid superiore nocte egeris, ubi fueris, quos convocaveris, quid
+  consilii ceperis, quem nostrum ignorare arbitraris? [2] O tempora, o mores!
+  Senatus haec intellegit. Consul videt; hic tamen vivit. Vivit? immo vero etiam
+  in senatum venit, fit publici consilii particeps, notat et designat oculis ad
+  caedem unum quemque nostrum. Nos autem fortes viri satis facere rei publicae
+  videmur, si istius furorem ac tela vitemus. Ad mortem te, Catilina, duci iussu
+  consulis iam pridem oportebat, in te conferri pestem, quam tu in nos [omnes
+  iam diu] machinaris.
+</p>
+```
+
 ---
 
 ## `ul elements with li element`
 
+The ul element represents an unordered list of items, typically rendered as a bulleted list. Each item in the unordered list should be created by nesting li element within the ul element. You can also nest more ul elements within li elements to create sub-lists.
+
+For example, to create this unordered list:
+
+- Milk
+- Cheese
+  - Blue Cheese
+  - Feta
+
+Use this code (note how the hierarchy of elements creates the list above):
+
+```html
+<ul>
+  <li>Milk</li>
+  <li>
+    Cheese
+    <ul>
+      <li>Blue Cheese</li>
+      <li>Feta</li>
+    </ul>
+  </li>
+</ul>
+```
+
+**Note:** If you want to change the bullet type of a ul element, you have to use CSS.
+
 ---
 
 ## `ol elements with li element`
+
+The ol element represents an ordered list of items — typically rendered as a numbered list. Syntax is pretty much like the ul element with nested li elements and other ol elements.
+
+For example to create this ordered list:
+
+1. Milk
+1. Cheese
+   1. Blue Cheese
+   1. Feta
+
+use this code:
+
+```html
+<ol>
+  <li>Milk</li>
+  <li>
+    Cheese
+    <ol>
+      <li>Blue Cheese</li>
+      <li>Feta</li>
+    </ol>
+  </li>
+</ol>
+```
+
+**Note:** If you want to change the type of numbering used, can use the type argument in the li element. The value should be the numbering system you prefer, such as 1, I, a etc. example:
+
+```html
+<ol>
+  <li type="1">Milk</li>
+  <li type="1">
+    Cheese
+    <ol>
+      <li type="I">Blue Cheese</li>
+      <li type="I">Feta</li>
+    </ol>
+  </li>
+</ol>
+```
+
+This creates this numbered list:
+
+1. Milk
+2. Cheese  
+   I. Blue Cheese  
+   II. Feta
 
 ---
 
@@ -289,6 +403,10 @@ The body element represents the main content of an HTML document. There can be o
 ---
 
 ## `div element`
+
+---
+
+## `span element`
 
 ---
 
