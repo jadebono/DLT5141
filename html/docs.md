@@ -1,4 +1,4 @@
-# `Common HTML Tags, Attributes and Values`
+# `Common HTML Elements, Attributes and Values`
 
 ## 'The HTML Document Object Model Tree'
 
@@ -79,5 +79,5 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 
 ## `Useful Links`
 
-[Emmet Documentation](https://docs.emmet.io/)
+[Emmet Documentation](https://docs.emmet.io/)  
 [Mozilla Developer Resources](https://developer.mozilla.org/)

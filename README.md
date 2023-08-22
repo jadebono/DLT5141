@@ -12,7 +12,7 @@
   - Common tags and their usage
   - Forms and input elements
 
-- [Basics of tags, attributes and values](/html/docs.md)
+- [Basics of elements, attributes and values](/html/docs.md)
 - [HTML Exercises](/html/html.md)
 - [Jamie Oliver's Roast Leg of Lamb](/html/index.html)
 
