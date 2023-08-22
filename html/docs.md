@@ -13,6 +13,8 @@ Most of the material in these notes have been adapted from:
 <!-- This is a comment. It is not rendered in the browser but is visible only to the coders working on the code. -->
 ```
 
+2. While it is not necessary, I find it useful to put attributes in alphabetical order to facilitate looking through them for missing ones or for problems.
+
 - [devdocs](https://devdocs.io/)
 - [Mozilla Developer Resources](https://developer.mozilla.org/)
 
@@ -35,10 +37,7 @@ Code:
 
 ## `html element`
 
-The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
-
-Permitted content: One head element, followed by one body element.
-Permitted parents: None. This is the root element of a document.
+The HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. It can only contain one head element and one body element following the head element. It has no parents as it is the root element of a document.
 
 ```html
 <!DOCTYPE html>
@@ -80,11 +79,11 @@ The meta is a self-closing tag that represents metadata that cannot be represent
     <!-- This attribute specifies the character encoding for the HTML document. The utf-8 value specified characters in the unicode set -->
     <meta charset="utf-8" />
     <!-- This viewport tag instructs the browser to set the width of the page to follow the screen-width of the device (which varies depending on the device) and to set the initial zoom level to 1.0 (no zoom). This is a foundational step in making a site responsive, but additional CSS is usually required to ensure the site looks good on all devices. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <!-- Description (provides a brief description of the page for search engines) -->
-    <meta name="description" content="A brief description of the webpage." />
+    <meta content="A brief description of the webpage." name="description" />
     <!-- Defines the author and the author's name -->
-    <meta name="author" content="Author's Name" />
+    <meta content="Author's Name" name="author" />
   </head>
 </html>
 ```
@@ -93,40 +92,85 @@ The meta is a self-closing tag that represents metadata that cannot be represent
 
 The link self-closing tags specifies relationships between the current document and an external resource. It can be placed anywhere in the document but is usually placed within the head element. The the example here links a css file in the root folder of your document:
 
+```html
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A brief description of the webpage." />
-    <meta name="author" content="Author's Name" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A brief description of the webpage." name="description" />
+    <meta content="Author's Name" name="author" />
     <!-- Links the main css stylesheet in the root folder of your project -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
 </html>
 ```
 
 ### `The script element`
 
+The script HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. It may be placed in other places on the page, but is usually placed in the head element.
+
+```html
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A brief description of the webpage." />
-    <meta name="author" content="Author's Name" />
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A brief description of the webpage." name="description" />
+    <meta content="Author's Name" name="author" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <!-- Links the main javascript code in the root folder of your project -->
     <script src="script.js"></script>
   </head>
 </html>
+```
+
 ---
 
 ## `title element`
 
+The title element defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored. The title element usually comes at the bottom of the head element, just above the head closing head.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A brief description of the webpage." name="description" />
+    <meta content="Author's Name" name="author" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- Links the main javascript code in the root folder of your project -->
+    <script src="script.js"></script>
+    <title>My Website</title>
+  </head>
+</html>
+```
+
 ---
 
 ## `body element`
+
+The body element represents the main content of an HTML document. There can be only one body element in a document.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A brief description of the webpage." name="description" />
+    <meta content="Author's Name" name="author" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- Links the main javascript code in the root folder of your project -->
+    <script src="script.js"></script>
+    <title>My Website</title>
+    <body>
+      The main content of your web page goes here
+    </body>
+  </head>
+</html>
+```
 
 ---
 

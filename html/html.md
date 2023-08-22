@@ -130,7 +130,7 @@ Solution:
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   </head>
 </html>
 ```
@@ -152,7 +152,8 @@ Solution:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" />
+    name="viewport"
     <title>Roast Leg of Lamb</title>
   </head>
 </html>
@@ -175,7 +176,7 @@ Solution:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Roast Leg of Lamb</title>
   </head>
   <body></body>
@@ -191,6 +192,7 @@ All the code you've inputted so far is common to virtually all html pages and is
 Hints:
 
 1. The emmet declaration to insert the basic boilerplate of an html document is: !
+1. Remember to change the content to the title element.
 
 Solution:
 
@@ -199,9 +201,101 @@ Solution:
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Roast Leg of Lamb</title>
   </head>
   <body></body>
 </html>
 ```
+
+## `Question 7 - Insert additional meta tags in the boilerplate code`
+
+Your boilerplate code is missing a number of additional meta tags that are nice to have. Please insert the following meta tags with their values under the other meta tags in your boilerplate:
+
+1. 1st meta tag: content="Jamie Oliver's recipe for a lamb of roast leg with amplifications" name="content";
+1. 1st meta tag: content="your name" name="author" ;
+
+Solution:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Jamie Oliver's roast leg of lamb with some amplifications"
+      name="content"
+    />
+    <!-- In the content attribute below, write your own name -->
+    <meta content="" name="author" />
+    <title>Roast Leg of Lamb</title>
+  </head>
+  <body></body>
+</html>
+```
+
+---
+
+## `Question 8 - Create and link your css file`
+
+Create your css file in your root folder and link it in the head element just above the title element.
+
+Hints:
+
+1. Different operating systems have different ways of expressing the path. Make sure that the path in your link points correctly to your css file. This documentation was written on linux and the path format reflects the one on that OS.
+
+Solution:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Jamie Oliver's roast leg of lamb with some amplifications"
+      name="content"
+    />
+    <!-- In the content attribute below, write your own name -->
+    <meta content="" name="author" />
+    <link href="/styles.css" rel="stylesheet" type="text/css" />
+    <title>Roast Leg of Lamb</title>
+  </head>
+  <body></body>
+</html>
+```
+
+---
+
+## `Question 9 - Create and link your javascript file`
+
+Create your javascript file in your root folder and link it in the head element just above the title element.
+
+Hints:
+
+1. Different operating systems have different ways of expressing the path. Make sure that the path in your link points correctly to your javascript file. This documentation was written on linux and the path format reflects the one on that OS.
+
+Solution:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Jamie Oliver's roast leg of lamb with some amplifications"
+      name="content"
+    />
+    <!-- In the content attribute below, write your own name -->
+    <meta content="" name="author" />
+    <link href="/styles.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <title>Roast Leg of Lamb</title>
+  </head>
+  <body></body>
+</html>
+```
+
+---
