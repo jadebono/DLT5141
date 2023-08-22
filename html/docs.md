@@ -59,7 +59,7 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 
 ---
 
-## `img element`
+## `img tag`
 
 ### `attribute: src`
 
@@ -97,6 +97,48 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 
 ---
 
+## `figure element`
+
+---
+
+## `figcaption element`
+
+---
+
+## `form element`
+
+---
+
+## `fieldset element`
+
+---
+
+## `legend element`
+
+---
+
+## `input tag`
+
+### `id attribute`
+
+### `type attribute (text)`
+
+### `name attribute`
+
+### `value attribute`
+
+### `checked attribute`
+
+---
+
+## `label element`
+
+---
+
+## `button element`
+
+---
+
 ## `div element`
 
 ---
@@ -109,11 +151,21 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 
 ---
 
+## `meta tag`
+
+### `name and content attributes for responsive design`
+
 ## `Validation`
 
 [Markup Validation Service](https://validator.w3.org/)
 
 ---
+
+## `Go Beyond`
+
+[Code a simple game using HTML, CSS, and JavaScript | FreeCodeCamp](https://www.freecodecamp.org/news/how-to-code-a-simple-game/)
+
+Bonus points if you use TailwindCSS instead of CSS.
 
 ## `Useful Links`
 

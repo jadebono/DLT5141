@@ -31,13 +31,36 @@ Example:
 
 In modern HTML5, you don't need the forward slash at the end of the self-closing tag (although it is still advisable). This is also valid in HTML5:
 
-`
+```html
 <img
-src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+/>
+```
 
-> `
+3. Some attributes have values, some do not.
 
-## `Question 1 - The Doctype Declaration`
+- src in this example has a
+  link as a value:
+
+```html
+<img
+  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+/>
+```
+
+- in this example of an a element, the attribute download does not have a value, it just downloads the file when you click on it:
+
+```html
+<a
+  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+  download
+  >Download the image</a
+>
+```
+
+4. Attributes do not have an order, and can be in any order from left to right, but if you put them in alphabetical order it will be much easier to work out if you're missing any.
+
+## `Question 1 - The DOCTYPE declaration`
 
 Insert a DOCTYPE declaration at the beginning of your new index.html document.
 
@@ -163,11 +186,11 @@ Solution:
 
 ## `Question 6 - Insert the initial boilerplate with an emmet declaration`
 
-Delete all that you've done so far and recreate using an emmet declaration. Remember to fill the title element with the text in Question 4.
+All the code you've inputted so far is common to virtually all html pages and is therefore called **boilerplate** that is a sort of template for further code. Delete all that you've done so far and recreate it all using an emmet declaration. Remember to fill the title element with the text in Question 4.
 
 Hints:
 
-1. The emmet declaration to insert the basic boilerplate of an html document is: !.
+1. The emmet declaration to insert the basic boilerplate of an html document is: !
 
 Solution:
 
