@@ -1,6 +1,6 @@
 # `Common HTML Elements, Attributes and Values`
 
-[Return to main page](./README.md)
+[Return to main page](../README.md)
 
 ## 'The HTML Document Object Model Tree'
 
