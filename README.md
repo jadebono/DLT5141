@@ -15,7 +15,7 @@
 - [Basics of elements, attributes and values](/html/docs.md)
 - [HTML Exercises](/html/html.md)
 - [Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)
-- [Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/index.html)
+- [Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)
 
 ## `2. Basics of CSS`
 
