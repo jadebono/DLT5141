@@ -1,5 +1,7 @@
 # `Common HTML Elements, Attributes and Values`
 
+[Return to main page](./README.md)
+
 ## 'The HTML Document Object Model Tree'
 
 **Important Note:**
@@ -182,6 +184,29 @@ The body element represents the main content of an HTML document. There can be o
    - An inline element does not start on a new line and only takes up as much width as necessary. An example of an inline-level element is the a element.
 
 ---
+
+## `main element`
+
+The main element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A brief description of the webpage." name="description" />
+    <meta content="Author's Name" name="author" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- Links the main javascript code in the root folder of your project -->
+    <script src="script.js"></script>
+    <title>My Website</title>
+    <body>
+      <main>The main content of your web page goes here</main>
+    </body>
+  </head>
+</html>
+```
 
 ## `h elements`
 

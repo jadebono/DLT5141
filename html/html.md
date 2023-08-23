@@ -1,5 +1,7 @@
 # `HTML Exercises`
 
+[Return to main page](./README.md)
+
 **Important Notes:**
 
 1. There is a difference between an element and a tag.
