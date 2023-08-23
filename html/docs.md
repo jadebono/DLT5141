@@ -44,11 +44,11 @@ The HTML element represents the root (top-level element) of an HTML document, so
 <html></html>
 ```
 
-### `attribute: lang:`
+### `html attributes:`
 
 The html element can take the [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) but for a beginner, the most usual one is the lang attribute.
 
-The lang attribute defines the language of the element to which it belongs. Setting it on the html element defines the language for the whole page. For the english language, the value is "en". A list for other languages is here: [HTML lang values](https://gist.github.com/JamieMason/3748498)
+- **lang:** This attribute defines the language of the element to which it belongs. Setting it on the html element defines the language for the whole page. For the english language, the value is "en". A list for other languages is here: [HTML lang values](https://gist.github.com/JamieMason/3748498)
 
 ```html
 <!DOCTYPE html>
@@ -306,27 +306,199 @@ This creates this numbered list:
 
 ## `table element`
 
+The table element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. You need to assemble from a number of other child elements such as thead, th, tbody, tr, td and caption. Think of the table element like the html element. You nest the other elements inside it.
+
+```html
+<table></table>
+```
+
 ### `thead element`
 
-### `tbody element`
+The <thead> element defines a set of rows defining the head of the columns of the table. like HTML's head element, it is nested in the table element and there can only be one thead element. You can nest other table elements in thead. The code below creates a row to serve as the head of the columns in the table.
+
+```html
+<table>
+  <thead></thead>
+</table>
+```
 
 ### `tr element`
 
+The <tr> HTML element defines a row of cells in a table. The row's cells can then be established using a mix of <td> (data cell) and <th> (header cell) elements. tr elements are nested in thead and tbody elements. In the code below, the tr element creates the row in the header.
+
+```html
+<table>
+  <thead>
+    <tr></tr>
+  </thead>
+</table>
+```
+
+### `th element`
+
+The th element defines a cell as the header of a group of table cells. th elements are nested inside tr elements. It has an important attribute called scope with the following values:
+
+- col: Indicates that the header cell is a header for a column.
+- row: Indicates that the header cell is a header for a row.
+- colgroup: Indicates that the header cell is a header for a group of columns (used in conjunction with the colgroup and col elements).
+- rowgroup: Indicates that the header cell is a header for a group of rows.
+
+In the following code the th element with the scope="col" attribute creates a row the cells of which are column headers containing the text Items and Expenditure.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Expenditure</th>
+    </tr>
+  </thead>
+</table>
+```
+
+### `tbody element`
+
+The tbody element encapsulates a set of table rows (tr elements), indicating that they comprise the body of the table. A table contains both a thead and a tbody and the tbody element comes under the thead element, in the same way that an HTML document contains both a head and body, with the body element coming under the head element.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Expenditure</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+```
+
 ### `td element`
+
+The td elements defines a cell of a table that contains data. td elements are nested within tr elements and each creates a cell of that row moving from left to right in the order that the td elements are nested in the tr elements.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Expenditure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Laptop</th>
+      <td>€1,000</td>
+    </tr>
+    <tr>
+      <th scope="row">Software</th>
+      <td>€500</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### `caption element`
+
+The caption HTML element specifies the caption (or title) of a table. Nest it just under the opening table element.
+
+```html
+<table>
+  <caption>
+    Work Resources
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Expenditure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Laptop</th>
+      <td>€1,000</td>
+    </tr>
+    <tr>
+      <th scope="row">Software</th>
+      <td>€500</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Note:** This will create an extremely ugly table. Style it with CSS or a CSS framework.
 
 ---
 
 ## `img tag`
 
-### `attribute: src`
+The img element embeds an image into the document. It is a self-closing tag and these are some of its more important attributes:
+
+### `img attributes`
+
+- **src:** (required) Specifies the path or URL of the image. This is the most essential attribute for the img tag.
+- **alt:** Provides a text alternative for the image. This is especially important for accessibility, as screen readers will read out this text for users who can't see the image.
+
+```html
+<img
+  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+  alt="Five cats looking around a field."
+/>
+```
+
+This will place the following image on your web page:
+
+![CatPhotoApp_FreeCodeCamp](https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg)
+
+---
+
+## `figure element`
+
+The figure element represents self-contained content, potentially with an optional caption, which is specified using the figcaption element. The figure, its caption, and its contents are referenced as a single unit.
+
+The figure element can be used with a large variety of content, not just with the img element:
+
+- Images: the img tag
+- Code blocks: the code element
+- Videos: the video element
+- Audio: the audio element
+- Embedded charts, diagrams and graphs
+- Blockquotes: the blockquote element
+- Tables: the table element
+- Text: the p element
+- Embedded maps
+
+```html
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+    alt="Five cats looking around a field."
+  />
+</figure>
+```
+
+---
+
+## `figcaption element`
+
+The figcaption element represents a caption or legend describing the rest of the contents of its parent figure element.
+
+```html
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+    alt="Five cats looking around a field."
+  />
+  <figcaption>Five cute cats in a field</figcaption>
+</figure>
+```
 
 ---
 
 ## `a element`
 
-### `attribute: href`
+### `a attributes`
 
-### `attribute: target`
+href and target
 
 ---
 
@@ -351,14 +523,6 @@ This creates this numbered list:
 ### `attribute: source`
 
 ### `attribute: allowfullscreen`
-
----
-
-## `figure element`
-
----
-
-## `figcaption element`
 
 ---
 
