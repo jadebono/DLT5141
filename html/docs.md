@@ -149,7 +149,7 @@ The title element defines the document's title that is shown in a browser's titl
 </html>
 ```
 
-## [Try it here](https://playcode.io/html)
+**[Try it here](https://jsfiddle.net/)**
 
 ## `body element`
 
@@ -174,7 +174,7 @@ The body element represents the main content of an HTML document. There can be o
 </html>
 ```
 
----
+## **[Try it here](https://jsfiddle.net/)**
 
 ## `Important Notes`
 
@@ -216,6 +216,8 @@ The main element represents the dominant content of the body of a document. The 
 </html>
 ```
 
+**[Try it here](https://jsfiddle.net/)**
+
 ## `h elements`
 
 The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the lowest. The h elements are
@@ -230,7 +232,7 @@ The h1 to h6 HTML elements represent six levels of section headings. h1 is the h
 
 ```
 
----
+## **[Add some h elements here:](https://jsfiddle.net/)**
 
 ## `p elements`
 
@@ -255,7 +257,7 @@ The p element represents a paragraph. Paragraphs are usually represented in visu
 </p>
 ```
 
----
+## **[Add a p elements here:](https://jsfiddle.net/)**
 
 ## `ul elements with li element`
 
@@ -284,6 +286,8 @@ Use this code (note how the hierarchy of elements creates the list above):
 ```
 
 **Note:** If you want to change the bullet type of a ul element, you have to use CSS.
+
+**[Try it here:](https://jsfiddle.net/)**
 
 ---
 
@@ -335,7 +339,7 @@ This creates this numbered list:
    I. Blue Cheese  
    II. Feta
 
----
+## **[Try it here:](https://jsfiddle.net/)**
 
 ## `table element`
 
@@ -460,7 +464,7 @@ The caption HTML element specifies the caption (or title) of a table. Nest it ju
 
 **Note:** This will create an extremely ugly table. Style it with CSS or a CSS framework.
 
----
+## **[Try it here:](https://jsfiddle.net/)**
 
 ## `img tag`
 
@@ -481,6 +485,8 @@ The img element embeds an image into the document. It is a self-closing tag and 
 This will place the following image on your web page:
 
 ![CatPhotoApp_FreeCodeCamp](https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg)
+
+## **[Try it here:](https://jsfiddle.net/)**
 
 ---
 
@@ -509,6 +515,8 @@ The figure element can be used with a large variety of content, not just with th
 </figure>
 ```
 
+## **[Try it here:](https://jsfiddle.net/)**
+
 ---
 
 ## `figcaption element`
@@ -525,6 +533,8 @@ The figcaption element represents a caption or legend describing the rest of the
 </figure>
 ```
 
+## **[Try it here:](https://jsfiddle.net/)**
+
 ---
 
 ## `a element`
@@ -539,6 +549,8 @@ The a element (or anchor element), with its href attribute, creates a hyperlink 
 ```html
 <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
 ```
+
+## **[Try it here:](https://jsfiddle.net/)**
 
 ---
 
@@ -575,6 +587,8 @@ The video element embeds a media player which supports video playback into the d
 ></video>
 ```
 
+## **[Try it here:](https://jsfiddle.net/)**
+
 ---
 
 ## `iframe element`
@@ -592,6 +606,8 @@ The iframe element represents a nested browsing context, embedding another HTML 
 ```
 
 **Note:** Some video-hosting websites provide you with their preferred code for the iframe element which may provide further code to allow the playback of their proprietary media.
+
+## **[Try it here:](https://jsfiddle.net/)**
 
 ---
 
@@ -623,10 +639,8 @@ The fieldset HTML element is used to group several controls as well as labels (l
   <fieldset>
     <input type="text" />
     <label for="kraken">Kraken</label><br />
-
     <input type="text" />
     <label for="sasquatch">Sasquatch</label><br />
-
     <input type="text" />
     <label for="mothman">Mothman</label>
   </fieldset>
@@ -661,23 +675,28 @@ The legend provides a caption for the content of its parent fieldset.
 
 The input element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The input element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
 
-- **name:** Name of the form control. Submitted with the form as part of a name/value pair. When the form is submitted the value of name becomes a key, and the text submitted from the input becomes the value.
+- **id:** The id attribute can be used in conjunction with the label element for attribute to associate a label with a specific input element. This enhances accessibility and allows users to click on the label to focus/select the input element. It is also very useful as a CSS and Javascript selector.
+- **name:** is the name of the form control. Submitted with the form as part of a name/value pair. When the form is submitted the value of name becomes a key, and the text submitted from the input becomes the value.
+- **placeholder:** allows you to put default text. Especially useful in a textbox.
+- **type:** has many values. For our current purposes, the only one that is pertinent is text which creates a textbok. However, there are many different type of values for type including radio, checkbox etc.
+- **value:** specifies the intial value of your input. Less useful with text, but more useful with inputs such as radio and checkbox
 
-### `id attribute`
-
-### `type attribute (text and submit)`
-
-### `name attribute`
-
-### `value attribute`
-
-### `placeholder attribute`
-
-### `checked attribute`
+```html
+<input id="cheese" name="cheese" placeholder="I ADORE cheese" type="text" />
+```
 
 ---
 
-## `label element`
+## `form elements: label element`
+
+The label element represents a caption for an item in a user interface. It is usually placed before or after its associated input element.
+
+- **for:** is a single id that is paired with the id of its associated input element.
+
+```html
+<label for="cheese">Do you like cheese?</label>
+<input id="cheese" name="cheese" placeholder="I ADORE cheese" type="text" />
+```
 
 ---
 
