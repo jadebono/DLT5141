@@ -70,6 +70,8 @@ The HTML element contains machine-readable information (metadata) about the docu
 </html>
 ```
 
+---
+
 ### `meta tag`
 
 The meta is a self-closing tag that represents metadata that cannot be represented by other HTML meta-related elements. The code below contains the meta tags with the most common attributes.
@@ -90,6 +92,8 @@ The meta is a self-closing tag that represents metadata that cannot be represent
 </html>
 ```
 
+---
+
 ### `The link tag`
 
 The link self-closing tags specifies relationships between the current document and an external resource. It can be placed anywhere in the document but is usually placed within the head element. The the example here links a css file in the root folder of your document:
@@ -107,6 +111,8 @@ The link self-closing tags specifies relationships between the current document 
   </head>
 </html>
 ```
+
+---
 
 ### `The script element`
 
@@ -149,7 +155,7 @@ The title element defines the document's title that is shown in a browser's titl
 </html>
 ```
 
-**[Try it here](https://jsfiddle.net/)**
+---
 
 ## `body element`
 
@@ -174,7 +180,9 @@ The body element represents the main content of an HTML document. There can be o
 </html>
 ```
 
-## **[Try it here](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
+
+---
 
 ## `Important Notes`
 
@@ -218,6 +226,10 @@ The main element represents the dominant content of the body of a document. The 
 
 **[Try it here](https://jsfiddle.net/)**
 
+**Block-Level:** main is a block-level element.
+
+---
+
 ## `h elements`
 
 The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the lowest. The h elements are
@@ -232,7 +244,11 @@ The h1 to h6 HTML elements represent six levels of section headings. h1 is the h
 
 ```
 
-## **[Add some h elements here:](https://jsfiddle.net/)**
+**[Add some h elements here](https://jsfiddle.net/)**
+
+**Block-Level:** The h elements are block-level elements.
+
+---
 
 ## `p elements`
 
@@ -257,7 +273,11 @@ The p element represents a paragraph. Paragraphs are usually represented in visu
 </p>
 ```
 
-## **[Add a p elements here:](https://jsfiddle.net/)**
+**[Add a p elements here](https://jsfiddle.net/)**
+
+**Block-Level:** The p element is a block-level element.
+
+---
 
 ## `ul elements with li element`
 
@@ -288,6 +308,8 @@ Use this code (note how the hierarchy of elements creates the list above):
 **Note:** If you want to change the bullet type of a ul element, you have to use CSS.
 
 **[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The ul element is a block-level element.
 
 ---
 
@@ -339,7 +361,11 @@ This creates this numbered list:
    I. Blue Cheese  
    II. Feta
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The ol element is a block-level element.
+
+---
 
 ## `table element`
 
@@ -464,7 +490,11 @@ The caption HTML element specifies the caption (or title) of a table. Nest it ju
 
 **Note:** This will create an extremely ugly table. Style it with CSS or a CSS framework.
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The table element is a block-level element.
+
+---
 
 ## `img tag`
 
@@ -486,7 +516,9 @@ This will place the following image on your web page:
 
 ![CatPhotoApp_FreeCodeCamp](https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg)
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Inline-Level:** The img tag is an inline-level element.
 
 ---
 
@@ -515,7 +547,9 @@ The figure element can be used with a large variety of content, not just with th
 </figure>
 ```
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The figure element is a block-level element.
 
 ---
 
@@ -533,7 +567,9 @@ The figcaption element represents a caption or legend describing the rest of the
 </figure>
 ```
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The figcaption element is a block-level element.
 
 ---
 
@@ -550,7 +586,9 @@ The a element (or anchor element), with its href attribute, creates a hyperlink 
 <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
 ```
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Inline-Level:** The a element is an inline-level element.
 
 ---
 
@@ -587,7 +625,9 @@ The video element embeds a media player which supports video playback into the d
 ></video>
 ```
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
+
+**Block-Level:** The video element is a block-level element.
 
 ---
 
@@ -607,17 +647,19 @@ The iframe element represents a nested browsing context, embedding another HTML 
 
 **Note:** Some video-hosting websites provide you with their preferred code for the iframe element which may provide further code to allow the playback of their proprietary media.
 
-## **[Try it here:](https://jsfiddle.net/)**
+**[Try it here:](https://jsfiddle.net/)**
 
 ---
 
 ## `form element`
 
-The <form> element represents a document section containing interactive controls for submitting information. A form is built by nesting other elements in it and it takes a number of attributes.
+The form element represents a document section containing interactive controls for submitting information. A form is built by nesting other elements in it and it takes a number of attributes.
 
 ```html
 <form></form>
 ```
+
+**Block-Level:** The form element is a block-level element.
 
 ### `form attributes`
 
@@ -647,6 +689,10 @@ The fieldset HTML element is used to group several controls as well as labels (l
 </form>
 ```
 
+**[Try it here](https://jsfiddle.net/)**
+
+**Block-Level:** The fieldset element is a block-level element.
+
 ---
 
 ## `form elements: legend element`
@@ -659,15 +705,15 @@ The legend provides a caption for the content of its parent fieldset.
     <legend>Choose your favorite monster</legend>
     <input type="text" />
     <label for="kraken">Kraken</label><br />
-
     <input type="text" />
     <label for="sasquatch">Sasquatch</label><br />
-
     <input type="text" />
     <label for="mothman">Mothman</label>
   </fieldset>
 </form>
 ```
+
+**[Try it here](https://jsfiddle.net/)**
 
 ---
 
@@ -685,6 +731,10 @@ The input element is used to create interactive controls for web-based forms in 
 <input id="cheese" name="cheese" placeholder="I ADORE cheese" type="text" />
 ```
 
+**[Try it here](https://jsfiddle.net/)**
+
+**Inline-Level:** The input element is an inline-level element.
+
 ---
 
 ## `form elements: label element`
@@ -698,25 +748,85 @@ The label element represents a caption for an item in a user interface. It is us
 <input id="cheese" name="cheese" placeholder="I ADORE cheese" type="text" />
 ```
 
+**[Try it here](https://jsfiddle.net/)**
+
+**Inline-Level:** The label element is an inline-level element.
+
 ---
 
-## `button element`
+## `form elements: button element`
+
+The button element has multiple uses and is usually activated by a mouse click (or other types of input). When placed in a form element, below the form's closing tag with a type attribute set to submit, it submits the data of the form.
+
+- **type:** when given a value of submit, it submits the input in the form.
+
+```html
+<form action="https://mywebsite.com/submit_form.php" method="post"></form>
+  <fieldset>
+    <label for="cheeseOne">Input a type of cheese</label>
+<input id="cheeseOne" name="cheeseOne" placeholder="I ADORE cheese" type="text" /></br>
+<label for="cheeseTwo">Input another type of cheese</label>
+<input id="cheeseTwo" name="cheeseTwo" placeholder="I ADORE cheese" type="text" /></br>
+<label for="cheeseThree">Input a third type of cheese</label>
+<input id="cheeseThree" name="cheeseThree" placeholder="I ADORE cheese" type="text" /></br>
+  </fieldset>
+  <button type="Submit">Submit your cheese!</button>
+</form>
+```
+
+**Note:** the br tag is a line break.
+
+**[Try it here](https://jsfiddle.net/)**
+
+**Inline-Level:** The button element is an inline-level element.
 
 ---
 
 ## `div element`
 
+The div element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS.
+
+```html
+<div></div>
+```
+
+**Block-Level:** The div element is a block-level element.
+
 ---
 
 ## `span element`
+
+The span element is another container element, a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other element is appropriate. span is very much like a div element, but div is a block-level element whereas a span is an **inline element**. Combined together, div and span elements give you great flexibility in laying out your content.
+
+```html
+<span></span>
+```
+
+**Inline-Level:** The span element is an inline-level element.
 
 ---
 
 ## `section element`
 
+The section element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions. The section element is a **block-level element**.
+
+```html
+<section></section>
+```
+
+**Block-Level:** The section element is a block-level element.
+
 ---
 
 ## `footer elements`
+
+The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. As such, you can have more than one footer on a page. A footer typically contains information about the author of the section, copyright data or links to related documents.
+
+```html
+<footer></footer>
+```
+
+**Block-Level:** The footer element is a block-level element.
 
 ---
 
