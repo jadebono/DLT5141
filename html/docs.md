@@ -307,7 +307,7 @@ Use this code (note how the hierarchy of elements creates the list above):
 
 **Note:** If you want to change the bullet type of a ul element, you have to use CSS.
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The ul element is a block-level element.
 
@@ -361,7 +361,7 @@ This creates this numbered list:
    I. Blue Cheese  
    II. Feta
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The ol element is a block-level element.
 
@@ -490,7 +490,7 @@ The caption HTML element specifies the caption (or title) of a table. Nest it ju
 
 **Note:** This will create an extremely ugly table. Style it with CSS or a CSS framework.
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The table element is a block-level element.
 
@@ -516,7 +516,7 @@ This will place the following image on your web page:
 
 ![CatPhotoApp_FreeCodeCamp](https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg)
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Inline-Level:** The img tag is an inline-level element.
 
@@ -547,7 +547,7 @@ The figure element can be used with a large variety of content, not just with th
 </figure>
 ```
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The figure element is a block-level element.
 
@@ -567,7 +567,7 @@ The figcaption element represents a caption or legend describing the rest of the
 </figure>
 ```
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The figcaption element is a block-level element.
 
@@ -586,7 +586,7 @@ The a element (or anchor element), with its href attribute, creates a hyperlink 
 <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
 ```
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Inline-Level:** The a element is an inline-level element.
 
@@ -625,7 +625,7 @@ The video element embeds a media player which supports video playback into the d
 ></video>
 ```
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** The video element is a block-level element.
 
@@ -647,7 +647,7 @@ The iframe element represents a nested browsing context, embedding another HTML 
 
 **Note:** Some video-hosting websites provide you with their preferred code for the iframe element which may provide further code to allow the playback of their proprietary media.
 
-**[Try it here:](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 ---
 
