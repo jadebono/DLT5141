@@ -1,4 +1,4 @@
-# `Common HTML Elements, Attributes and Values`
+# `Common HTML Elements and Attributes`
 
 [Return to main page](../README.md)
 
@@ -12,7 +12,7 @@ Most of the material in these notes have been adapted from:
 1. Comments in html are placed within the following text:
 
 ```html
-<!-- This is a comment. It is not rendered in the browser but is visible only to the coders working on the code. -->
+<!-- This is a comment. It is not rendered in the browser but is visible only to those reading the code (either through an IDE, text file, or even by inspecting the source of an html page in the browser). -->
 ```
 
 2. While it is not necessary, I find it useful to put attributes in alphabetical order to facilitate looking through them for missing ones or for problems.
@@ -182,6 +182,14 @@ The body element represents the main content of an HTML document. There can be o
 1. Block-level elements vs inline elements:
    - A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). An example of a block-level element is the p element;
    - An inline element does not start on a new line and only takes up as much width as necessary. An example of an inline-level element is the a element.
+
+### `List of block-Level elements`
+
+address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1 - h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video
+
+### `List of inline-Level elements`
+
+a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var
 
 ---
 
@@ -521,53 +529,139 @@ The figcaption element represents a caption or legend describing the rest of the
 
 ## `a element`
 
+The a element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+
 ### `a attributes`
 
-href and target
+- **href:** (required) is the link that you want to use
+- **target:** Specifies where to open the linked document. With a value of \_blank, it opens the links in a new page which is very convenient for your users.
+
+```html
+<a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
+```
 
 ---
 
 ## `video element`
 
-### `attribute: source`
+The video element embeds a media player which supports video playback into the document. The source of the video is local, i.e. one hosted by yourself in your project folder. You can use video for audio content as well, but the audio element may provide a more appropriate user experience.
 
-### `attribute: type`
+### `video attributes`
 
-### `attribute: autoplay`
+- **autoplay:** No value. If present the video will autoplay once the page loads. Don't put it in. It is incredibly annoying for users
+- **controls:** No value. If present it will offer controls for the user
+- **loop:** No value. If present, the browser will keep playing the video on a loop
+- **muted:** No value. If present the default setting for the audio will be mute. If absent, the default setting will be with audio
+- **src:** The link to the video you want to embed
+- **type:** specifies the MIME type of the video file helping the browser understand the specific codec to use to playback the video. Possible values are these:
+  - video/webm: WebM video format, typically using the VP8 or VP9 codec
+  - video/mp4: MP4 video format, often using the H.264 video codec
+  - video/ogg: Ogg video format, typically using the Theora codec.
+  - video/3gpp and video/3gpp2: Used for 3G mobile phones. These formats might use various codecs.
+  - video/x-msvideo: AVI format.
+  - video/x-flv: Flash video format.
+  - video/quicktime: QuickTime format, using the .mov file extension.
+  - video/x-matroska: Matroska format, using the .mkv file extension for video with audio and subtitles.
+  - video/mpeg: MPEG video format, typically MPEG-1 or MPEG-2.
+- **width:** The width of the video's display area
 
-### `attribute: loop`
-
-### `attribute: muted`
-
-### `attribute: width`
+```html
+<video
+  controls
+  muted
+  src="/media/cc0-videos/flower.webm"
+  type="video/webm"
+  width="250"
+></video>
+```
 
 ---
 
 ## `iframe element`
 
-### `attribute: source`
+The iframe element represents a nested browsing context, embedding another HTML page into the current one. You can also embed an online video in it.
 
-### `attribute: allowfullscreen`
+### `iframe attributes`
+
+- **allowfullscreen:** No value. If it is present it activates fullscreen mode
+- **src:** (required) is the link of the browsing content you are embedding in your web page
+- **width:** The width of the video's display area
+
+```html
+<iframe src="https://www.youtube.com/embed/Szv5Yx7xdyM" width="560"></iframe>
+```
+
+**Note:** Some video-hosting websites provide you with their preferred code for the iframe element which may provide further code to allow the playback of their proprietary media.
 
 ---
 
 ## `form element`
 
-### `action attribute`
+The <form> element represents a document section containing interactive controls for submitting information. A form is built by nesting other elements in it and it takes a number of attributes.
 
-### `method attribute (post)`
+```html
+<form></form>
+```
+
+### `form attributes`
+
+- **action:** is the attribute that defines the destination to which to send the data in the form. You do not need it to send inputs to your javascript file
+- **method:** specifies the way that data is sent from the form to its destination. There are two different values here: get and post. The post method does not reveal the inputs submitted in the browser's url bar, and it can send a lot more data than get. In general, post is a much better option here especially if your are submitting usernames and password.
+
+```html
+<form action="https://mywebsite.com/submit_form.php" method="post"></form>
+```
 
 ---
 
-## `fieldset element`
+## `form elements: fieldset element`
+
+The fieldset HTML element is used to group several controls as well as labels (label element) within a web form.
+
+```html
+<form>
+  <fieldset>
+    <input type="text" />
+    <label for="kraken">Kraken</label><br />
+
+    <input type="text" />
+    <label for="sasquatch">Sasquatch</label><br />
+
+    <input type="text" />
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+```
 
 ---
 
-## `legend element`
+## `form elements: legend element`
+
+The legend provides a caption for the content of its parent fieldset.
+
+```html
+<form>
+  <fieldset>
+    <legend>Choose your favorite monster</legend>
+    <input type="text" />
+    <label for="kraken">Kraken</label><br />
+
+    <input type="text" />
+    <label for="sasquatch">Sasquatch</label><br />
+
+    <input type="text" />
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+```
 
 ---
 
 ## `input tag`
+
+The input element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The input element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
+
+- **name:** Name of the form control. Submitted with the form as part of a name/value pair. When the form is submitted the value of name becomes a key, and the text submitted from the input becomes the value.
 
 ### `id attribute`
 
