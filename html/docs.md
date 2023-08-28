@@ -23,6 +23,8 @@ Most of the material in these notes have been adapted from:
 ![The HTML DOM Tree of Objects](https://www.w3schools.com/js/pic_htmltree.gif)  
 Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_htmldom.asp)
 
+3. There are two very important attributes, id and class, that are available for virtually every element and tag. These attributes can take any user-defined value and are used to select the elements that they are put upon in CSS and Javascript. For the purpose of this document, they are largely unnecessary but you will meet them, and use them, in the material on CSS and Javascript.
+
 ---
 
 ## `Doctype Declaration`
