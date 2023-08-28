@@ -39,9 +39,10 @@
 
 ## 4. Online Tools
 
+- [Codepen](https://codepen.io/)
 - [Fiddle](https://jsfiddle.net/)
-- [Replit](https://replit.com/)
 - [Playcode](https://playcode.io/) (Preferable)
+- [Replit](https://replit.com/)
 
 ## 5. Docs
 
