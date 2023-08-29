@@ -1,6 +1,24 @@
-.h1 {
-  color: red;
+h1 {
+  margin: 10px auto;
+  text-align: center;
+  padding: 1px;
+  background-color: red;
+  color: white;
   font-weight: bold;
-  font-size: 16px;
 }
 
+.secondTitle {
+  margin: 10px auto;
+  text-align: center;
+  padding: 1px;
+  background-color: green;
+  color: white;
+}
+
+#thirdTitle {
+  margin: 10px auto;
+  text-align: center;
+  padding: 1px;
+  background-color: blue;
+  color: white;
+}
