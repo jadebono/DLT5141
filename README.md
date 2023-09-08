@@ -12,7 +12,7 @@
   - Common tags and their usage
   - Forms and input elements
 
-- [Basics of HTML Elements and Attributes](/html/docs.md)
+- [Basics of HTML Elements and Attributes](/html/html.md)
 - [Basic Concepts of CSS](/html/docs.md)
 - [HTML Exercises](/html/html.md)
 - [Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)
