@@ -6,21 +6,17 @@
 
 ## `2. Basics of HTML`
 
-- **Basics of HTML**
-
+- [Basics of HTML Elements and Attributes](/html/html.md)
   - Structure of an HTML document
   - Common tags and their usage
   - Forms and input elements
-
-- [Basics of HTML Elements and Attributes](/html/html.md)
-- [Basic Concepts of CSS](/html/docs.md)
 - [HTML Exercises](/html/html.md)
 - [Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)
 - [Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)
 
 ## `2. Basics of CSS`
 
-- **Basics of CSS**
+- **[Basic Concepts of CSS](/html/css.md)**
   - Styling elements
   - CSS classes and IDs
   - Responsive design principles
