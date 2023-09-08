@@ -53,3 +53,7 @@
 - [How does the INTERNET work? | ICT](https://youtu.be/x3c1ih2NJEg) - basic
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
+
+## 16. General Resources
+
+- [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
