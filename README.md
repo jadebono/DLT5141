@@ -2,17 +2,17 @@
 
 ## `1. How the Web Works`
 
-- **Overview of how the web works**
+- **[How does the INTERNET work? | ICT](https://youtu.be/x3c1ih2NJEg)** - basic overview of how the web works
 
 ## `2. Basics of HTML`
 
-- [Basics of HTML Elements and Attributes](/html/html.md)
+- **[Basics of HTML Elements and Attributes](/html/html.md)**
   - Structure of an HTML document
   - Common tags and their usage
   - Forms and input elements
-- [HTML Exercises](/html/html.md)
-- [Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)
-- [Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)
+- **[HTML Exercises](/html/html.md)**
+- **[Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)**
+- **[Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)**
 
 ## `2. Basics of CSS`
 
@@ -46,7 +46,6 @@
 
 ## 15. Video Tutorials
 
-- [How does the INTERNET work? | ICT](https://youtu.be/x3c1ih2NJEg) - basic
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
 - [Learn HTML & CSS – Full Course for Beginners | FreeCodeCamp](https://youtu.be/a_iQb1lnAEQ?si=E2JRGLK-EFUqSEY_) **Note:** Free course but the tutor urges you to sign up for a freemium account on Scrimba. This is not necessary for the purposes of completing this course on youtube.
