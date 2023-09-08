@@ -53,6 +53,7 @@
 - [How does the INTERNET work? | ICT](https://youtu.be/x3c1ih2NJEg) - basic
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
+- [Learn HTML & CSS – Full Course for Beginners || FreeCodeCamp](https://youtu.be/a_iQb1lnAEQ?si=E2JRGLK-EFUqSEY_) **Note:** Free course but the tutor urges you to sign up for a freemium account on Scrimba. This is not necessary for the purposes of completing this course on youtube.
 
 ## 16. General Resources
 
