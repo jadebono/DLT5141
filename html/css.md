@@ -2,8 +2,6 @@
 
 [Return to main page](../README.md)
 
-**Note:** Start with the box model
-
 ---
 
 ## `Table of Contents`
