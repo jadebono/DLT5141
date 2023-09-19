@@ -34,7 +34,7 @@
 
 ---
 
-## `3. Basics of CSS``
+## `3. Basics of CSS`
 
 - **[Basic Concepts of CSS](/html/css.md)**
   - Styling elements
