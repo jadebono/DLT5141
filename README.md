@@ -4,14 +4,14 @@
 
 ## `Table of Contents`
 
-- [1. How the Web Works](#introduction-to-css)
-- [2. Basics of HTML](#css-attributes-and-properties-a-quick-explanation)
-- [3. Basics of CSS](#basic-selectors-and-properties)
-- [4. Basics of Javascript](#useful-links)
-- [5. Final Project and Presentation](#useful-links)
-- [6. Online Tools](#useful-links)
-- [7. Docs](#useful-links)
-- [8. Video Tutorials](#useful-links)
+- [1. How the Web Works](#1-how-the-web-works)
+- [2. Basics of HTML](#2-basics-of-html)
+- [3. Basics of CSS](#3-basics-of-css)
+- [4. Basics of Javascript](#4-basics-of-javascript)
+- [5. Final Project and Presentation](#5-final-project-and-presentation)
+- [6. Online Tools](#6-online-tools)
+- [7. Docs](#7-docs)
+- [8. Video Tutorials](#8-video-tutorials)
 - [9. General Resources](#9-general-resources)
 
 ---
