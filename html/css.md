@@ -10,7 +10,7 @@
 
 - [Introduction to CSS](#introduction-to-css)
 - [CSS Attributes and Properties: A Quick Explanation](#css-attributes-and-properties-a-quick-explanation)
-- [Basic Selectors and Properties](#basic-selectorsa-and-properties)
+- [Basic Selectors and Properties](#basic-selectors-and-properties)
 - [Useful Links](#useful-links)
 
 ---
@@ -140,7 +140,7 @@ p {
 
 ### `Class and ID Selectors`
 
-1. **Class Selector (.classname):** Targets elements with a specific class attribute. Multiple elements can have the same class.
+1. **Class Selector (.classname):** Starts with a dot (.) and targets elements with a specific class attribute. Multiple elements can have the same class.
 
 ```css
 .my-cool-button {
@@ -149,7 +149,7 @@ p {
 }
 ```
 
-1. **ID Selector (#idname):** Targets a single element with a specific ID attribute. Each ID should be unique within a page.
+1. **ID Selector (#idname):** Starts with a hash (#) and targets a single element with a specific ID attribute. Each ID should be unique within a page.
 
 ```css
 #my-container-for-images {
