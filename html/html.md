@@ -37,7 +37,7 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 - [main element](#main-element)
 - [h elements](#h-elements)
 - [p element](#p-element)
-- [ul element with li element](#ul-elements-with-li-element)
+- [ul element with li element](#ul-element-with-li-element)
 - [ol element with li element](#ol-element-with-li-element)
 - [table element](#table-element)
 - [img tag](#img-tag)
