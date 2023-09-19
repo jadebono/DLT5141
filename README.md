@@ -44,7 +44,7 @@
 
 - [devdocs](https://devdocs.io/)
 
-## 15. Video Tutorials
+## 6. Video Tutorials
 
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
@@ -54,6 +54,6 @@
 - [CSS Tutorial - Zero to Hero (Complete Course) | FreeCodeCamp](https://youtu.be/1Rs2ND1ryYc?si=Hv9-dflkpsSl-Zb1)
 - [Learn JavaScript - Full Course for Beginners | FreeCodeCamp](https://youtu.be/PkZNo7MFNFg?si=ZZya0N2L41SCDpbF)
 
-## 16. General Resources
+## 7. General Resources
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
