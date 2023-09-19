@@ -2,7 +2,7 @@
 
 [Return to main page](../README.md)
 
-## 'The HTML Document Object Model Tree'
+## `The HTML Document Object Model Tree`
 
 **Important Note:**
 Most of the material in these notes have been adapted from:
@@ -23,6 +23,42 @@ Most of the material in these notes have been adapted from:
 Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_htmldom.asp)
 
 4. There are two very important attributes, id and class, that are available for virtually every element and tag. These attributes can take any user-defined value and are used to select the elements that they are put upon in CSS and Javascript. For the purpose of this document, they are largely unnecessary but you will meet them, and use them, in the material on CSS and Javascript.
+
+---
+
+## `Table of Contents`
+
+- [Doctype Declaration](#doctype-declaration)
+- [html element](#html-element)
+- [head element](#head-element)
+- [title element](#title-element)
+- [body element](#body-element)
+- [Important Notes](#important-notes)
+- [main element](#main-element)
+- [h elements](#h-elements)
+- [p element](#p-element)
+- [ul element with li element](#ul-elements-with-li-element)
+- [ol element with li element](#ol-element-with-li-element)
+- [table element](#table-element)
+- [img tag](#img-tag)
+- [figure element](#figure-element)
+- [figcaption element](#figcaption-element)
+- [a element](#a-element)
+- [video element](#video-element)
+- [iframe element](#iframe-element)
+- [form element](#form-element)
+- [form element: fieldset element](#form-element:-fieldset-element)
+- [form element: legend element](#form-element:-legend-element)
+- [input tag](#input-tag)
+- [form element: label element](#form-element:-label-element)
+- [form element: button element](#form-element:-button-element)
+- [div element](#div-element)
+- [span element](#span-element)
+- [section element](#section-element)
+- [footer element](#footer-element)
+- [Validation](#validation)
+- [Go Beyond](#go-beyond)
+- [Useful Links](#useful-links)
 
 ---
 
@@ -251,7 +287,7 @@ The h1 to h6 HTML elements represent six levels of section headings. h1 is the h
 
 ---
 
-## `p elements`
+## `p element`
 
 The p element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
 
@@ -280,7 +316,7 @@ The p element represents a paragraph. Paragraphs are usually represented in visu
 
 ---
 
-## `ul elements with li element`
+## `ul element with li element`
 
 The ul element represents an unordered list of items, typically rendered as a bulleted list. Each item in the unordered list should be created by nesting li element within the ul element. You can also nest more ul elements within li elements to create sub-lists.
 
@@ -314,7 +350,7 @@ Use this code (note how the hierarchy of elements creates the list above):
 
 ---
 
-## `ol elements with li element`
+## `ol element with li element`
 
 The ol element represents an ordered list of items — typically rendered as a numbered list. Syntax is pretty much like the ul element with nested li elements and other ol elements.
 
@@ -673,7 +709,7 @@ The form element represents a document section containing interactive controls f
 
 ---
 
-## `form elements: fieldset element`
+## `form element: fieldset element`
 
 The fieldset HTML element is used to group several controls as well as labels (label element) within a web form.
 
@@ -696,7 +732,7 @@ The fieldset HTML element is used to group several controls as well as labels (l
 
 ---
 
-## `form elements: legend element`
+## `form element: legend element`
 
 The legend provides a caption for the content of its parent fieldset.
 
@@ -738,7 +774,7 @@ The input element is used to create interactive controls for web-based forms in 
 
 ---
 
-## `form elements: label element`
+## `form element: label element`
 
 The label element represents a caption for an item in a user interface. It is usually placed before or after its associated input element.
 
@@ -755,7 +791,7 @@ The label element represents a caption for an item in a user interface. It is us
 
 ---
 
-## `form elements: button element`
+## `form element: button element`
 
 The button element has multiple uses and is usually activated by a mouse click (or other types of input). When placed in a form element, below the form's closing tag with a type attribute set to submit, it submits the data of the form.
 
@@ -819,7 +855,7 @@ The section element represents a generic standalone section of a document, which
 
 ---
 
-## `footer elements`
+## `footer element`
 
 The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. As such, you can have more than one footer on a page. A footer typically contains information about the author of the section, copyright data or links to related documents.
 
