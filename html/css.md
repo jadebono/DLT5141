@@ -219,9 +219,210 @@ The box model consists of four main components, from innermost to outermost:
 1. **Border:** A visible (or invisible) line that goes around the padding and content.
 1. **Margin:** The space outside the border. It's used to separate the box from other boxes and is also transparent.
 
-![CSS Box Model](https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png) ![CSS Box Model](https://www.csssolid.com/images/box-model/css-box-model.png)
+![CSS Box Model](https://www.csssolid.com/images/box-model/css-box-model.png)
 
----
+Note: The element is the blue box. The border is the black line around the padding.
+
+```css
+div {
+  /* Content dimensions */
+  width: 300px;
+  height: 150px;
+
+  /* Padding */
+  padding: 10px;
+
+  /* Border */
+  border: 5px solid black;
+
+  /* Margin */
+  margin: 20px;
+}
+```
+
+### `The box-sizing property`
+
+The box-sizing property can alter how the box model works:
+
+1. **content-box** (default): Width and height properties include only the content. Border and padding are added outside of the box.
+1. **border-box**: Width and height properties include content, padding, and border. This makes it easier to size elements.
+
+### `Block vs Inline Elements`
+
+HTML elements are by default either block-level or inline-level:
+
+1. Block-level Elements: These elements take up the full width available and start on a new line. Examples include div, h1, p, and li.
+1. Inline-level Elements: These elements only take up as much width as necessary and do not start on a new line. Examples include span, a, and img.
+
+### `Setting Margin and Padding`
+
+Margins and padding are crucial components of the CSS box model. They control the spacing around and within elements, respectively. Properties can be either px (pixels) or % (percentage of parent element's width for horizontal properties life left and right, and percentage of parent element's height for vertical properties like top and bottom).
+
+#### `Long Form`
+
+Using the long form, you can specify each side of the box individually. This gives you individual control over the spacing.
+
+**Margin:**
+
+```css
+div {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+```
+
+**Padding:**
+
+```css
+div {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+```
+
+#### `Shorthand Form`
+
+The shorthand form allows you to set the values more succinctly. Depending on the number of values you provide, the behavior changes.
+
+- **One value:** This value applies to all four sides.
+
+```css
+div {
+  margin: 10px;
+  padding: 10px;
+}
+```
+
+- **Two values:** The first value is for the top and bottom, and the second value is for the left and right.
+
+```css
+div {
+  margin: 10px 15px;
+  padding: 10px 15px;
+}
+```
+
+- **Three values:** The first value is for the top, the second value is for the left and right, and the third value is for the bottom.
+
+```css
+div {
+  margin: 10px 15px 20px;
+  padding: 10px 15px 20px;
+}
+```
+
+- **Four values:** Each value applies to a side, in the order top, right, bottom, and left (clockwise).
+
+```css
+div {
+  margin: 10px 15px 20px 25px;
+  padding: 10px 15px 20px 25px;
+}
+```
+
+**Notes:**
+
+- Remember the mnemonic **T** **R** ou **B** **L** e (TRouBLe) to recall the order: Top, Right, Bottom, Left.
+- Using the shorthand form can make your stylesheets shorter and more readable, but it's essential to be aware of the order to avoid confusion.
+
+### `Setting the Border`
+
+Borders in CSS are used to create a line around the outside of an element. You can control the style, width, and color of borders using various properties. The main attributes are **width**, **style**, **color**, and **radius**. Width, style and color can be set for all individual four borders (top, right, bottom left) so you can use both the long form or the shorthand form. Radius is set for the entire border.
+
+#### `Border Width`
+
+You can set the width of the border using the **border-width** attribute. Like margins and padding, you can use specific values for each side or use shorthand notation. Each example below will give the long form and the shorthand form.
+
+```css
+div {
+  border-top-width: 2px;
+  border-right-width: 3px;
+  border-bottom-width: 2px;
+  border-left-width: 3px;
+}
+
+div {
+  border-width: 2px 3px 2px 3px;
+}
+```
+
+#### `Border Style`
+
+The **border-style** attribute defines the style of the border. Common values include **solid**, **dashed**, **dotted**, **double**, and **none**.
+
+```css
+div {
+  border-top-style: solid;
+  border-right-style: dashed;
+  border-bottom-style: dotted;
+  border-left-style: double;
+}
+
+div {
+  border-style: solid;
+}
+
+div {
+  border-style: dashed;
+}
+
+div {
+  border-style: dotted;
+}
+
+div {
+  border-style: none;
+}
+```
+
+#### `Border Color`
+
+You can set the color of the border using the **border-color** attribute.
+
+```css
+div {
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-left-color: yellow;
+}
+
+div {
+  border-color: red green blue yellow;
+}
+```
+
+#### `Shorthand for All Border Properties`
+
+```css
+div {
+  border: 2px solid red;
+}
+```
+
+#### `Border Radius`
+
+The **border-radius** attribute allows you to round the corners of an element:
+
+```css
+div {
+  border-radius: 10px; /* All four corners */
+}
+```
+
+You can also specify each corner individually:
+
+```css
+div {
+  border-radius: 10px 20px 30px 40px; /* Top-left, Top-right, Bottom-right, Bottom-left */
+}
+```
+
+## **[Try it here](https://jsfiddle.net/)**
 
 ## `Useful Links`
 
