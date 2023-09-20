@@ -9,6 +9,7 @@
 - [Introduction to CSS](#introduction-to-css)
 - [CSS Attributes and Properties: A Quick Explanation](#css-attributes-and-properties-a-quick-explanation)
 - [Basic Selectors and Properties](#basic-selectors-and-properties)
+- [The Box Model](#the-box-model)
 - [Useful Links](#useful-links)
 
 ---
@@ -138,7 +139,7 @@ p {
 
 ### `Class and ID Selectors`
 
-1. **Class Selector (.classname):** Starts with a dot (.) and targets elements with a specific class attribute. Multiple elements can have the same class.
+1. **Class Selector (.classname):** Starts with a dot (.) and targets elements with a specific class attribute. Multiple elements can have the same class. Also, the same element can have many different classes.
 
 ```css
 .my-cool-button {
@@ -202,6 +203,23 @@ img {
 ```
 
 **[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `The Box Model`
+
+In web design and development, the CSS box model is a fundamental concept that describes the design and layout of elements on a webpage. Every element on a page is considered a rectangular box, and the box model details how the size and spacing of these boxes are worked out. It is **essential** to master the box model as without such knowledge precise layout of elements on a page becomes very difficult, if not impossible.
+
+### `Understanding the Components`
+
+The box model consists of four main components, from innermost to outermost:
+
+1. **Content:** This is the actual content of the box, where text, images, or other media reside.
+1. **Padding:** The space between the content and the border. It's transparent, meaning it doesn't have a color unless specified.
+1. **Border:** A visible (or invisible) line that goes around the padding and content.
+1. **Margin:** The space outside the border. It's used to separate the box from other boxes and is also transparent.
+
+![CSS Box Model](https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png) ![CSS Box Model](https://www.csssolid.com/images/box-model/css-box-model.png)
 
 ---
 
