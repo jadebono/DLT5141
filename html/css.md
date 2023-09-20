@@ -422,7 +422,7 @@ div {
 }
 ```
 
-## **[Try it here](https://jsfiddle.net/)**
+**[Try it here](https://jsfiddle.net/)**
 
 ## `Useful Links`
 
