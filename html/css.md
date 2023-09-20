@@ -221,7 +221,7 @@ The box model consists of four main components, from innermost to outermost:
 
 ![CSS Box Model](https://www.csssolid.com/images/box-model/css-box-model.png)
 
-Note: The element is the blue box. The border is the black line around the padding.
+Note: In this image, the green perimeter is the padding which is always invisible but in this case has been colored green so that you may better visualise it. The border is the line around the padding. The border can be set to any width, style and color you desire. In this case, we have thick solid border in an orange color.
 
 ```css
 div {
