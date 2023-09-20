@@ -12,6 +12,8 @@
 - [The Box Model](#the-box-model)
 - [Layout and Positioning](#layout-and-positioning)
 - [Typography](#typography)
+- [Colors and Backgrounds](#colors-and-backgrounds)
+- [Advanced Selectors](#advanced-selectors)
 - [Useful Links](#useful-links)
 
 ---
@@ -633,6 +635,144 @@ p {
   word-spacing: 4px;
 }
 ```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Colors and Backgrounds`
+
+Colors play a vital role in web design, influencing both the aesthetics and the user experience. Backgrounds, on the other hand, can enhance the visual appeal of an element or the entire page. CSS provides a rich set of properties to control colors and backgrounds.
+
+### `Color Attributes`
+
+There are two main color attributes: **color** and **background-color**. They have a number of values that will be listed in the appropriate sections below
+
+- **color**: sets the color of text in an element.
+- **background-color**: sets the color of the background of the element.
+
+```css
+p {
+  background-color: black; /* sets the background color of the p element to black*/
+  color: white; /* sets the color of the text in the p element  to white*/
+}
+```
+
+### `Color Values`
+
+CSS supports various methods to represent color:
+
+- [**CSS Named Colors**](https://www.quackit.com/css/color/charts/css_color_names_chart.cfm): a list of named colors such as **blue**, **red**, **green** and more complex ones such as **indianred**.
+
+```css
+p {
+  color: mediumspringgreen;
+}
+```
+
+- **Hexadecimal (Hex)**: A six-digit representation of color such as **#ff5733**.
+
+```css
+p {
+  color: #ff5733;
+}
+```
+
+- **RGB**: Stands for Red, Green, Blue (RGB). A color mixing mode using Red, Green and Blue values from 0-255 to generate a color: rgb(255,248,220)
+
+```css
+div {
+  background-color: rgb(255, 87, 51);
+}
+```
+
+- **RGBA**: Like RGB, but with an added Alpha channel for opacity. The value for opacity ranges from 0.0 (fully transparent) to 1.0 (fully opaque): rgba(255, 99, 71, 0.5),
+
+```css
+div {
+  background-color: rgba(255, 87, 51, 0.5); /* 50% opacity */
+}
+```
+
+- **HSL**: Stands for Hue, Saturation, Lightness (HSL). Another color mixing mode like RGB. The value of hue is from 0 to 360. The values for saturation and lightness are percentages.
+
+```css
+h1 {
+  color: hsl(12, 100%, 50%);
+}
+```
+
+- **HSLA**: Like HSL, but with an added Alpha channel for opacity. Once again, the values for the opacity range from 0.0 (fully transparent) to 1.0 (fully opaque): hsla(12, 100%, 50%, 0.3),
+
+```css
+h1 {
+  color: hsla(12, 100%, 50%, 0.7); /* 70% opacity */
+}
+```
+
+### `Background Color`
+
+You can set the background color of an element using the background-color attribute. The values are the same as those for the color attribute.
+
+### `Background Repeat`
+
+By default, background images will repeat to cover the entire element. You can control this behavior with the **background-repeat** attribute and the **no-repeat** value.
+
+**Note**: The background-repeat attribute has other values to repeat the background image but in general this does not produce a clean look.
+
+```css
+div {
+  background-repeat: no-repeat; /* Other possible values: repeat-x, repeat-y, repeat */
+}
+```
+
+### `Background Position`
+
+The **background-position** attribute lets you control the starting position of a background image.
+
+```css
+div {
+  background-position: center center; /* Values can be keywords or percentages */
+}
+```
+
+### `Background Size`
+
+With the **background-size** attribute, you can specify the size of the background image.
+
+```css
+div {
+  background-size: cover; /* Other values: contain, 100px 200px, 50% 50% */
+}
+```
+
+### `Gradients`
+
+CSS allows you to create color gradients as backgrounds. Gradients can be linear or radial.
+
+- **linear-gradient**: creates a linear gradient from the first supplied color to the second one. Color values are the same as those of the **color** and **background-color** attributes.
+
+```css
+div {
+  background: linear-gradient(red, yellow);
+}
+```
+
+### `Shorthand Background Attribute`
+
+You can set multiple background attributes in one line using the shorthand **background** attribute.
+
+```css
+div {
+  background: #ff5733 url("path-to-image.jpg") no-repeat center center / cover;
+}
+```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Advanced Selectors`
 
 **[Try it here](https://jsfiddle.net/)**
 
