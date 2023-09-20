@@ -10,6 +10,7 @@
 - [CSS Attributes and Properties: A Quick Explanation](#css-attributes-and-properties-a-quick-explanation)
 - [Basic Selectors and Properties](#basic-selectors-and-properties)
 - [The Box Model](#the-box-model)
+- [Layout and Positioning](#layout-and-positioning)
 - [Useful Links](#useful-links)
 
 ---
@@ -423,6 +424,95 @@ div {
 ```
 
 **[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Layout and Positioning`
+
+In web design, how elements are positioned on a page is crucial for usability and aesthetics. CSS provides several attributes and techniques to control the layout and positioning of elements.
+
+### `Normal Document Flow`
+
+By default, elements on a web page follow the "normal document flow". This means:
+
+1. **Block-level** elements stack vertically, one after the other.
+1. **Inline-level** elements sit side by side in the order they appear in the HTML.
+
+### `The Display Property`
+
+The **display** attribute determines how an element is treated in terms of the box model and document flow. It takes four values: **block**, **inline**, **inline-block** and **none**.
+
+- **block**: Element takes up the full width available and starts on a new line.
+- **inline**: Element only takes up as much width as necessary and does not start on a new line.
+- **inline-block**: Element is treated as inline but retains block-level styling features.
+- **none**: Element is removed from the document flow and is not displayed.
+
+```css
+span {
+  display: block;
+}
+
+div {
+  display: inline;
+}
+
+div {
+  display: inline-block;
+}
+
+div {
+  display: none;
+}
+```
+
+### `Positioning`
+
+The **position** attribute defines how an element is positioned within its containing element. It has five values: **static**, **relative**, **absolute**, **fixed** and **sticky**.
+
+1. **static (default)**: Element follows the normal document flow.
+1. **relative**: Element is positioned relative to its normal position. It doesn't remove the element from the document flow.
+1. **absolute**: Element is positioned relative to the nearest positioned ancestor (not static). If no positioned ancestors exist, it's positioned relative to the viewport.
+1. **fixed**: Element is positioned relative to the viewport and remains in the same position even when the page is scrolled.
+1. **sticky**: Element is positioned based on the user's scroll position. It toggles between relative and fixed positioning.
+
+```css
+div {
+  position: relative;
+  top: 10px; /* Moves the element 10px down from its normal position */
+}
+
+div {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+div {
+  position: sticky;
+  top: 0;
+}
+```
+
+### `The float Property`
+
+The float attribute is now mostly used for wrapping text around images. Elements can be floated to the left or right, allowing other elements to wrap around them.
+
+```css
+img {
+  float: left;
+  margin-right: 10px;
+}
+```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
 
 ## `Useful Links`
 
