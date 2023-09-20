@@ -11,6 +11,7 @@
 - [Basic Selectors and Properties](#basic-selectors-and-properties)
 - [The Box Model](#the-box-model)
 - [Layout and Positioning](#layout-and-positioning)
+- [Typography](#typography)
 - [Useful Links](#useful-links)
 
 ---
@@ -507,6 +508,129 @@ The float attribute is now mostly used for wrapping text around images. Elements
 img {
   float: left;
   margin-right: 10px;
+}
+```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Typography`
+
+Typography in web design refers to the art and technique of arranging type to make written language legible, readable, and appealing. It encompasses everything from font choice to line length. Proper typography ensures both the functionality and aesthetics of web content.
+
+### `Web-safe Fonts and Custom Fonts`
+
+- **Web-safe Fonts**: These are fonts that are commonly installed across most devices and browsers. Using them ensures that your text appears consistently across different platforms. A list is available here:
+
+[Web-safe fonts](https://www.cssfontstack.com/)
+
+```css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+- **Custom Fonts**: With the rise of web fonts, you can now use a vast array of custom fonts. These can be loaded using services like Google Fonts or by hosting font files on your server. You need to import these fonts using a @import command.
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+```
+
+**Note**: The first font in the list of values following the font-family attribute is your preferred choice of font. The subsequent fonts are failsafe fonts, in case your preferred choice of font is not available. For failsafe fonts, it is best to choose from the list of web-safe fonts.
+
+### `Font Properties`
+
+- **font-family**: Specifies the typeface to be used. Choose from web-safe or custom fonts. Remember to add a fallback font.
+
+```css
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+```
+
+- **font-size**: Sets the size of the text. Values can be px (pixels) or em, which is a unit of measurement relative to the parent's size.
+
+Example 1: using px as a value
+
+```css
+h1 {
+  font-size: 24px;
+}
+```
+
+Example 2: using em as a value
+
+```css
+body {
+  font-size: 16px; /* This is often the default browser font size */
+}
+
+h1 {
+  font-size: 2em; /* 2 * 16px = 32px */
+}
+```
+
+- **font-weight**: Determines the thickness of the characters. Common values include **normal**, **bold**, and numeric weights from 100 to 900.
+
+```css
+p {
+  font-weight: bold;
+}
+```
+
+- **font-style**: Specifies the style of the font, with the following values: **normal**, **italic**, **oblique** and **inherit**.
+
+```css
+p {
+  font-style: italic;
+}
+```
+
+- **line-height**: Controls the space between lines of text. It can improve readability. Values can be a number representing a multiplier of the font-size, or px or em as in font-size.
+
+```css
+p {
+  font-size: 16px;
+  line-height: 1.5; /* 1.5 * 16px = 24px */
+}
+```
+
+- **text-transform**: Controls the capitalization of text. Values include **uppercase**, **lowercase**, and **capitalize**.
+
+```css
+h2 {
+  text-transform: uppercase;
+}
+```
+
+- **text-decoration**: Adds decoration to text, like **underline**, **overline**, **line-through**, or **none**.
+
+```css
+h1 {
+  text-decoration: underline;
+}
+```
+
+### `Letter Spacing and Word Spacing`
+
+- **letter-spacing**: Adjusts the space between characters. Values are similar to those of line-height.
+
+```css
+p {
+  letter-spacing: 2px;
+}
+```
+
+- **word-spacing**: Adjusts the space between words. Values are the same as line-height and letter-spacing.
+
+```css
+p {
+  word-spacing: 4px;
 }
 ```
 
