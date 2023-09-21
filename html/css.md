@@ -982,6 +982,8 @@ p::after {
 
 ### `Flex`
 
+- [CSS Flexbox Generator](https://www.cssportal.com/css-flexbox-generator/)
+- [CSS Flex Layout](https://angrytools.com/css-flex/)
 - [Flex Calculator](https://www.flexulator.com/)
 
 ### `Grid`
