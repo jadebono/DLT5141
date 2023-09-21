@@ -124,7 +124,7 @@ In CSS, selectors are patterns used to select the elements you want to style. On
 
 ### `Universal and Type Selectors`
 
-1. **Universal Selector (\*):** Targets all elements on a page.
+- **Universal Selector (\*):** Targets all elements on a page.
 
 ```css
 * {
@@ -133,7 +133,7 @@ In CSS, selectors are patterns used to select the elements you want to style. On
 }
 ```
 
-1. **Type Selector (or Element Selector):** Targets **all** elements of a specified type on a web page.
+- **Type Selector (or Element Selector):** Targets **all** elements of a specified type on a web page.
 
 ```css
 p {
@@ -143,7 +143,7 @@ p {
 
 ### `Class and ID Selectors`
 
-1. **Class Selector (.classname):** Starts with a dot (.) and targets elements with a specific class attribute. Multiple elements can have the same class. Also, the same element can have many different classes.
+- **Class Selector (.classname):** Starts with a dot (.) and targets elements with a specific class attribute. Multiple elements can have the same class. Also, the same element can have many different classes.
 
 ```css
 .my-cool-button {
@@ -152,7 +152,7 @@ p {
 }
 ```
 
-1. **ID Selector (#idname):** Starts with a hash (#) and targets a single element with a specific ID attribute. Each ID should be unique within a page.
+- **ID Selector (#idname):** Starts with a hash (#) and targets a single element with a specific ID attribute. Each ID should be unique within a page.
 
 ```css
 #my-container-for-images {
@@ -165,7 +165,7 @@ p {
 
 Here are some basic CSS properties to get started. You will probably use these for every element you create.
 
-1. **Color:** Sets the color of the text in an element.
+- **Color:** Sets the color of the text in an element.
 
 ```css
 p {
@@ -173,7 +173,7 @@ p {
 }
 ```
 
-1. **Font-size:** Sets the size of the text in an element.
+- **Font-size:** Sets the size of the text in an element.
 
 ```css
 h1 {
@@ -181,7 +181,7 @@ h1 {
 }
 ```
 
-1. **Background-color:** Sets the background color of an element.
+- **Background-color:** Sets the background color of an element.
 
 ```css
 div {
@@ -189,7 +189,7 @@ div {
 }
 ```
 
-1. **Width and Height:** Sets the width and height of an element.
+- **Width and Height:** Sets the width and height of an element.
 
 ```css
 .box {
@@ -198,7 +198,7 @@ div {
 }
 ```
 
-1. **Border:** Sets the border around an element.
+- **Border:** Sets the border around an element.
 
 ```css
 img {
