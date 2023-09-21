@@ -14,6 +14,7 @@
 - [Typography](#typography)
 - [Colors and Backgrounds](#colors-and-backgrounds)
 - [Advanced Selectors](#advanced-selectors)
+- [Transitions and Animations](#transitions-and-animations)
 - [Useful Links](#useful-links)
 
 ---
@@ -648,8 +649,8 @@ Colors play a vital role in web design, influencing both the aesthetics and the 
 
 There are two main color attributes: **color** and **background-color**. They have a number of values that will be listed in the appropriate sections below
 
-- **color**: sets the color of text in an element.
-- **background-color**: sets the color of the background of the element.
+1. **color**: sets the color of text in an element.
+1. **background-color**: sets the color of the background of the element.
 
 ```css
 p {
@@ -678,7 +679,9 @@ p {
 }
 ```
 
-- **RGB**: Stands for Red, Green, Blue (RGB). A color mixing mode using Red, Green and Blue values from 0-255 to generate a color: rgb(255,248,220)
+- **RGB**: Stands for Red, Green, Blue (RGB). A color mixing mode using Red, Green and Blue values from 0-255 to generate a color: rgb(255,248,220). Pure white is rgb(255,255,255)
+
+**Note**: Due to the different systems of color used by CSS, it can be of great help to use a [color calculator](https://www.tydac.ch/color/)
 
 ```css
 div {
@@ -774,6 +777,189 @@ div {
 
 ## `Advanced Selectors`
 
+While basic selectors like type, class, and ID are commonly used, CSS offers a range of advanced selectors that provide powerful capabilities for targeting specific elements based on their relationships, attributes, and states.
+
+### `Child and Descendant Selectors`
+
+- **Child Selector**: Targets an element that is a direct child of another specific element.
+
+```css
+div > p {
+  color: red;
+}
+```
+
+- **Descendant Selector**: Targets an element that is a descendant of another specific element, not just a direct child.
+
+```css
+div p {
+  color: blue;
+}
+```
+
+### `Adjacent Sibling Selector`
+
+Targets an element that is directly after another specific element, and both share the same parent.
+
+```css
+h2 + p {
+  font-weight: bold;
+}
+```
+
+### `General Sibling Selector`
+
+Targets an element that follows another specific element, and both share the same parent (not necessarily immediately after).
+
+```css
+h2 ~ p {
+  font-style: italic;
+}
+```
+
+### `Attribute Selectors`
+
+Targets elements based on their attributes and attribute values.
+
+- **Presence of an attribute**:
+
+```css
+input[type] {
+  border: 1px solid black;
+}
+```
+
+- **Exact attribute value**:
+
+```css
+input[type="text"] {
+  background-color: yellow;
+}
+```
+
+- **Attribute value starting with a specific string**:
+
+```css
+a[href^="https://"]
+{
+  font-weight: bold;
+}
+```
+
+- **Attribute value ending with a specific string**:
+
+```css
+a[href$=".pdf"] {
+  color: red;
+}
+```
+
+- **Attribute value containing a specific substring**:
+
+```css
+a[href*="example"] {
+  text-decoration: underline;
+}
+```
+
+### `Pseudo-Classes`
+
+Pseudo-classes target elements based on their state or position.
+
+- **:hover**: is the state of the element when the mouse hovers over it.
+
+```css
+button {
+  background-color: blue; /* the normal background color of the button */
+}
+
+button:hover {
+  background-color: darkblue; /* the button's background color will now turn darkblue when you move the mouse on to it*/
+}
+```
+
+- **:active**: The state of the element when the mouse actually clicks on it.
+
+```css
+button {
+  background-color: blue; /* the normal background color of the button */
+}
+
+button:hover {
+  background-color: darkblue; /* the button's background color will now turn darkblue when you move the mouse on to it*/
+}
+
+button:active {
+  background-color: red; /* the button's background color will now turn red when you click on it*/
+}
+```
+
+- **first-child**: The first element nested within a parent element.
+
+```css
+ul > li:first-child {
+  font-weight: bold;
+}
+```
+
+- **last-child**: The last element nested within a parent element.
+
+```css
+ul > li:last-child {
+  font-style: italic;
+}
+```
+
+- **:nth-child(n)**: The nth element nested within a parent element. For example the :nth-child(3) is the 3rd element nested within a parent element.
+
+```css
+ul > li:nth-child(3) {
+  text-decoration: underline;
+}
+```
+
+### `Pseudo-elements`
+
+Pseudo-elements target specific parts of an element, allowing you to style them.
+
+- **::first-line**: is the first line of the parent element.
+
+```css
+p::first-line {
+  font-weight: bold;
+}
+```
+
+- **::first-letter**: is the first letter of the parent element.
+
+```css
+p::first-letter {
+  font-size: 2em;
+}
+```
+
+- **::before**: inserts content **before** the content of the selected element.
+- **::after**: inserts content **before** the content of the selected element.
+
+```css
+p::before {
+  /* inserts the word "Note" with a font-weight of bold BEFORE the content of the p element */
+  content: "Note: ";
+  font-weight: bold;
+}
+
+p::after {
+  /* inserts fullstop AFTER the content of the p element */
+  content: ".";
+}
+```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Transitions and Animations`
+
 **[Try it here](https://jsfiddle.net/)**
 
 ---
@@ -781,3 +967,23 @@ div {
 ## `Useful Links`
 
 - [devdocs](https://devdocs.io/)
+
+### `Typography Tools`
+
+- [Type scale - a visual calculator](https://typescale.com/)
+- [Fluid typography scale](https://royalfig.github.io/fluid-typography-calculator/)
+
+### `Color Tools`
+
+- [Adobe color tool and generator](https://color.adobe.com/)
+- [Coolors - palette generator](https://coolors.co/)
+- [Color wheel and calculator](https://www.canva.com/colors/color-wheel/)
+- [Palette generator](https://paletton.com/)
+
+### `Flex`
+
+- [Flex Calculator](https://www.flexulator.com/)
+
+### `Grid`
+
+- [Grid Layout Generator](https://grid.layoutit.com/)
