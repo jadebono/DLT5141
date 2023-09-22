@@ -127,27 +127,26 @@ In a nutshell, while HTML attributes give elements their native behavior and cha
 
 1. **Origin and Importance**:
 
-- Styles can come from various sources: user agent styles (default browser styles), user styles, and author styles (styles written by the website developer).
-- There's a hierarchy of importance: author styles typically override user and user agent styles. However, users can force their styles to take precedence using **!important**.
+   - Styles can come from various sources: user agent styles (default browser styles), user styles, and author styles (styles written by the website developer).
+   - There's a hierarchy of importance: author styles typically override user and user agent styles. However, users can force their styles to take precedence using **!important**.
 
-1. **Specificity:** When multiple styles target the same element, CSS uses specificity to determine which style to apply. **VERY IMPORTANT**: High specificity overrides low specificity. In other words, the browser will choose which of two rules for the same element to apply based on which one has higher specificity. Specificity is calculated based on the types of selectors used:
+2. **Specificity:** When multiple styles target the same element, CSS uses specificity to determine which style to apply. **VERY IMPORTANT**: High specificity overrides low specificity. In other words, the browser will choose which of two rules for the same element to apply based on which one has higher specificity. Specificity is calculated based on the types of selectors used:
 
-- **Inline styles: (e.g., style="color: red;" in HTML)** have the highest specificity. These will be followed regardless of other rules affecting them in the external styles.css file.
-- **ID selectors (e.g., #myID)**: have higher specificity than class, attribute, and pseudo-class selectors (e.g., .myClass).
-- **Class, attribute, and pseudo-class selectors**: have higher specificity than type selectors (e.g., div). If two selectors have the same specificity, the one that appears last in the stylesheet will take precedence.
+   - **Inline styles: (e.g., style="color: red;" in HTML)** have the highest specificity. These will be followed regardless of other rules affecting them in the external styles.css file.
+   - **ID selectors (e.g., #myID)**: have higher specificity than class, attribute, and pseudo-class selectors (e.g., .myClass).
+   - **Class, attribute, and pseudo-class selectors**: have higher specificity than type selectors (e.g., div). If two selectors have the same specificity, the one that appears last in the stylesheet will take precedence.
 
-1. **Source Order**:
+3. **Source Order**:
 
-- If specificity is the same, the order in which the styles are declared matters. The latter declaration will override the earlier ones. This is why the order of rules in a stylesheet can affect the final appearance of a page. **The lower the style in the styles.css file, the higher its specificity**.
+   - If specificity is the same, the order in which the styles are declared matters. The latter declaration will override the earlier ones. This is why the order of rules in a stylesheet can affect the final appearance of a page. **The lower the style in the styles.css file, the higher its specificity**.
 
-1. **Inheritance**:
+4. **Inheritance**:
 
-- Some CSS properties are inherited from parent elements to their children, meaning child elements get the computed style of their parent unless otherwise specified. For example, if you set the color property on a div, its text content and any child elements will inherit that color, unless you've set a different color on the child.
+   - Some CSS properties are inherited from parent elements to their children, meaning child elements get the computed style of their parent unless otherwise specified. For example, if you set the color property on a div, its text content and any child elements will inherit that color, unless you've set a different color on the child.
 
-1. **Universal Selector and Importance**:
-
-- **The universal selector (\*)**: has the lowest specificity and will select all elements.
-- **The !important declaration**: can be added to any CSS property value to give it higher importance. If used, it will override other styles, regardless of specificity. However, its overuse is discouraged as it can make stylesheets harder to understand and maintain.
+5. **Universal Selector and Importance**:
+   - **The universal selector (\*)**: has the lowest specificity and will select all elements.
+   - **The !important declaration**: can be added to any CSS property value to give it higher importance. If used, it will override other styles, regardless of specificity. However, its overuse is discouraged as it can make stylesheets harder to understand and maintain.
 
 In summary, the cascade in CSS is a set of rules that browsers use to determine which styles to apply to an element. It takes into account the source of the style, its specificity, its order in the stylesheet, inheritance, and any importance applied to it. Understanding the cascade is crucial for effectively styling web pages and resolving any style conflicts that may arise.
 
@@ -1111,6 +1110,57 @@ body {
 ```
 
 **Note**: Media queries should be placed at the bottom of the styles.css file to ensure that they have the highest specificity.
+
+### `Fluid Grids`
+
+Instead of using fixed widths (like pixels), use relative units like percentages. This ensures that your layout adapts to the screen's width.
+
+```css
+.container {
+  width: 90%; /* Takes up 90% of its parent's width */
+  max-width: 1200px; /* But won't exceed 1200px */
+}
+```
+
+### `Flexible Images`
+
+Ensure images scale and resize within their containing elements.
+
+```css
+img {
+  max-width: 100%; /* Ensures images don't scale beyond their original size */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+```
+
+### `Responsive Typography`
+
+Ensure that text remains readable across devices by using relative units like em or [rem](https://www.freecodecamp.org/news/what-is-rem-in-css/), and by adjusting font sizes within media queries.
+
+```css
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+}
+```
+
+### `Hide and Show Content`
+
+Sometimes, certain content might be more relevant on desktop than on mobile, or vice versa. Media queries can help show or hide content based on the device's width.
+
+```css
+/* Hide on screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .desktop-only {
+    display: none;
+  }
+}
+```
+
+### `CSS Flexbox and Grid`
+
+CSS flexbox and grid are two extremely powerful tools for responsive design. Due to their power and importance they will be treated in their own individual sections below
 
 **[Try it here](https://jsfiddle.net/)**
 
