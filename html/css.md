@@ -8,13 +8,15 @@
 
 - [Introduction to CSS](#introduction-to-css)
 - [CSS Attributes and Properties: A Quick Explanation](#css-attributes-and-properties-a-quick-explanation)
+- [The Cascade Principle](#the-cascade-principle)
 - [Basic Selectors and Properties](#basic-selectors-and-properties)
 - [The Box Model](#the-box-model)
 - [Layout and Positioning](#layout-and-positioning)
 - [Typography](#typography)
 - [Colors and Backgrounds](#colors-and-backgrounds)
 - [Advanced Selectors](#advanced-selectors)
-- [Transitions and Animations](#transitions-and-animations)
+- [Transitions](#transitions)
+- [Responsive Design](#responsive-design)
 - [Useful Links](#useful-links)
 
 ---
@@ -116,6 +118,38 @@ Each property has its own particular set of values (for example the color proper
 While HTML attributes define properties and values of the HTML elements themselves, CSS properties define how these elements should be displayed visually on the web page.  
 For example, the href attribute in an a tag determines the link's destination, while the CSS color property for the same a tag will define the link's color.  
 In a nutshell, while HTML attributes give elements their native behavior and characteristics, CSS properties customize their appearance and layout on the web page.
+
+---
+
+## `The Cascade Principle`
+
+**CSS** stands for Cascading Style Sheets. The cascade is one of its fundamental principles. When multiple styles target the same element, the one that appears last in the stylesheet will take precedence, assuming they have the same specificity. These are the rules of the Cascade Principle:
+
+1. **Origin and Importance**:
+
+- Styles can come from various sources: user agent styles (default browser styles), user styles, and author styles (styles written by the website developer).
+- There's a hierarchy of importance: author styles typically override user and user agent styles. However, users can force their styles to take precedence using **!important**.
+
+1. **Specificity:** When multiple styles target the same element, CSS uses specificity to determine which style to apply. **VERY IMPORTANT**: High specificity overrides low specificity. In other words, the browser will choose which of two rules for the same element to apply based on which one has higher specificity. Specificity is calculated based on the types of selectors used:
+
+- **Inline styles: (e.g., style="color: red;" in HTML)** have the highest specificity. These will be followed regardless of other rules affecting them in the external styles.css file.
+- **ID selectors (e.g., #myID)**: have higher specificity than class, attribute, and pseudo-class selectors (e.g., .myClass).
+- **Class, attribute, and pseudo-class selectors**: have higher specificity than type selectors (e.g., div). If two selectors have the same specificity, the one that appears last in the stylesheet will take precedence.
+
+1. **Source Order**:
+
+- If specificity is the same, the order in which the styles are declared matters. The latter declaration will override the earlier ones. This is why the order of rules in a stylesheet can affect the final appearance of a page. **The lower the style in the styles.css file, the higher its specificity**.
+
+1. **Inheritance**:
+
+- Some CSS properties are inherited from parent elements to their children, meaning child elements get the computed style of their parent unless otherwise specified. For example, if you set the color property on a div, its text content and any child elements will inherit that color, unless you've set a different color on the child.
+
+1. **Universal Selector and Importance**:
+
+- **The universal selector (\*)**: has the lowest specificity and will select all elements.
+- **The !important declaration**: can be added to any CSS property value to give it higher importance. If used, it will override other styles, regardless of specificity. However, its overuse is discouraged as it can make stylesheets harder to understand and maintain.
+
+In summary, the cascade in CSS is a set of rules that browsers use to determine which styles to apply to an element. It takes into account the source of the style, its specificity, its order in the stylesheet, inheritance, and any importance applied to it. Understanding the cascade is crucial for effectively styling web pages and resolving any style conflicts that may arise.
 
 ---
 
@@ -958,7 +992,125 @@ p::after {
 
 ---
 
-## `Transitions and Animations`
+## `Transitions`
+
+Transitions bring life to web designs, allowing elements to transition more smoothly and creating a more dynamic user experience.
+
+### `Transitions`
+
+Transitions allow property changes in CSS values to occur smoothly over a specified duration.
+
+- **transition-property**: Specifies the CSS attribute to which the transition will be applied.
+- **transition-duration**: Determines how long the transition will take.
+- **transition-timing-function**: Describes how intermediate values for the transition are calculated. **ease-in**, **ease-out** and **ease-in-out** are the most common values.
+- **transition-delay**: Specifies when the transition will start.
+
+```css
+button {
+  transition-property: background-color;
+  transition-duration: 0.5s; /* 0.5 seconds */
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s; /* 1 second delay */
+}
+```
+
+We can do it shorthand:
+
+```css
+button {
+  transition: background-color 0.5s ease-in-out 1s;
+}
+```
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Responsive Design`
+
+Responsive design ensures that web content looks and functions well on a variety of devices and screen sizes. With the proliferation of devices, from desktops to smartphones to tablets, it's essential to design websites that adapt seamlessly.
+
+### `The viewport`
+
+The viewport is the visible area of a web page on a display device. It represents the part of the web page that is currently visible to the user. The size of the viewport can vary based on the device being used, its screen size, and its resolution.
+
+**Why is the viewport important?**
+
+1. **Different Devices, Different Sizes**: With the proliferation of devices like smartphones, tablets, laptops, and desktop monitors, web content can be viewed on screens of vastly different sizes and resolutions. The viewport helps designers and developers ensure that content is displayed correctly across these devices.
+1. **Responsive Web Design**: The concept of the viewport is crucial for responsive web design. Responsive design aims to make websites look and function well on a variety of devices and screen sizes. By using relative units and media queries, developers can create layouts that adapt to different viewport sizes.
+1. **User Experience**: A correctly set viewport ensures that users don't have to excessively zoom in or out or scroll horizontally to view content, leading to a better user experience.
+
+**Viewport Meta Tag**: On mobile devices, web pages were initially scaled down to fit the screen due to the smaller screen sizes. This often made text too small to read and required users to zoom in. To overcome this, the viewport meta tag was introduced. The viewport meta tag gives the browser instructions on how to control the page's dimensions and scaling. Here are the two main attributes for use in the viewport meta tag:
+
+**width=device-width**: This instructs the page to match the screen's width in device-independent pixels.
+**initial-scale=1.0**: This defines the initial zoom level when the page is first loaded.
+
+By using the viewport meta tag, developers can ensure that their web pages are displayed correctly on mobile devices, taking full advantage of the available screen real estate.
+
+```css
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+
+### `Media Queries`
+
+Media queries allow you to apply CSS rules based on device characteristics, most commonly the device's width. Media queries consist of a media type and one or more conditions that check for the specific characteristics of a device. When the conditions are met, the corresponding block of CSS rules is applied.
+
+Legal media types for media queries consist of these:
+
+**all**: Suitable for all devices.
+
+- **print**: Intended for paged material and documents viewed on a screen in print preview mode. This can include printers or devices with screens that are designed to mimic the appearance of paper.
+- **screen**: Intended primarily for screens (color computer screens).
+- **speech**: Intended for speech synthesizers (e.g., screen readers).
+
+**Note**: In effect, the main media type you will be using for media queries especially in responsive design is **screen**.
+
+**Using Media Queries**
+
+- **Basic syntax**: Nest the usual css syntax within a media query:
+
+```css
+@media screen and (max-width: 600px) {
+  /* CSS rules for screens smaller than or equal to 600px */
+}
+```
+
+A typical example would be this:
+
+```css
+/* Default CSS rules for larger screens */
+body {
+  background-color: lightblue;
+  font-size: 20px;
+}
+
+/* Media query for screens smaller than or equal to 600px */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightcoral;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    padding: 10px;
+  }
+}
+```
+
+- **Multiple conditions**:
+
+```css
+@media (min-width: 600px) and (max-width: 900px) {
+  /* CSS rules for screens between 600px and 900px */
+}
+```
+
+**Note**: Media queries should be placed at the bottom of the styles.css file to ensure that they have the highest specificity.
 
 **[Try it here](https://jsfiddle.net/)**
 
