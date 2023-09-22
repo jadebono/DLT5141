@@ -25,9 +25,6 @@
 ## `2. Basics of HTML`
 
 - **[Basics of HTML Elements and Attributes](/html/html.md)**
-  - Structure of an HTML document
-  - Common tags and their usage
-  - Forms and input elements
 - **[HTML Exercises](/html/html.md)**
 - **[Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)**
 - **[Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)**
@@ -37,19 +34,14 @@
 ## `3. Basics of CSS`
 
 - **[Basic Concepts of CSS](/html/css.md)**
-  - Styling elements
-  - CSS classes and IDs
-  - Responsive design principles
-  - Tailwind CSS Framework (Optional)
+- **[CSS Exercises]()**
 
 ---
 
 ## `4. Basics of Javascript`
 
 - **[Basics of JavaScript](./javascript.md)**
-  - Variables, data types, and operations in JS
-  - DOM manipulation
-  - Event handling
+- **[Javascript Exercises]()**
 
 ---
 
