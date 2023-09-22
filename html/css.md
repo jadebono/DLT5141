@@ -17,6 +17,8 @@
 - [Advanced Selectors](#advanced-selectors)
 - [Transitions](#transitions)
 - [Responsive Design](#responsive-design)
+- [Flexbox](#flexbox)
+- [Grid](#grid)
 - [Useful Links](#useful-links)
 
 ---
@@ -1166,6 +1168,147 @@ CSS flexbox and grid are two extremely powerful tools for responsive design. Due
 
 ---
 
+## `Flexbox`
+
+Flexbox, or the Flexible Box Layout, is a layout model in CSS that allows items within a container to be dynamically arranged in any direction and can have flexible sizes. It's particularly useful for designing complex layout structures with a clean and predictable way, especially when the sizes of your items are unknown or dynamic.
+
+### `Basics of Flexbox`
+
+To start using flexbox, you need to define a container as a flex container with **display: flex** or **display: inline-flex** (if you want the container to behave like an inline element). That container, becomes a **flexbox** in which all child elements become **flex items**.
+
+### `The Axes of Flexbox`
+
+1. **Main Axis**: The primary axis along which flex items are laid out. The direction of the main axis is determined by the flex-direction property.
+
+   - Possible values for flex-direction that define the main axis are:
+     - **row** (default): left to right in horizontal layouts.
+     - **row-reverse**: right to left in horizontal layouts.
+     - **column**: top to bottom in vertical layouts.
+     - **column-reverse**: bottom to top in vertical layouts.
+   - The main start and main end points are the points where items start and end along the main axis.
+   - The main size of a flex item refers to its width or height, whichever is in the main dimension (e.g., width in a row direction, height in a column direction).
+
+2. **Cross Axis**:
+   - The axis perpendicular to the main axis. Its direction depends on the main axis direction.
+   - The **cross start** and **cross end** points are the points where items start and end along the cross axis.
+   - **The cross size** of a flex item refers to its width or height in the cross dimension (e.g., height in a row direction, width in a column direction).
+   - Alignment along the cross axis is controlled by properties like **align-items** (for all items in the container) and **align-self** (for individual items).
+
+### `Setting Up Flexbox`
+
+To use flexbox, you first need to define a container as a flex container. Once you do this, all direct children become flex items.
+
+```css
+.container {
+  display: flex;
+}
+```
+
+### `Direction of Items: flex-direction`
+
+This attribute defines the direction of the main axis.
+
+```css
+.container {
+  flex-direction: row; /* Default. Main axis is horizontal */
+}
+.container {
+  flex-direction: column; /* Main axis is vertical */
+}
+```
+
+### `Wrapping Items: flex-wrap`
+
+By default, items will try to fit onto one line. You can change that and allow the items to wrap as needed with this attribute:
+
+```css
+.container {
+  flex-wrap: wrap;
+}
+```
+
+### `Aligning and Justifying Content`
+
+- Horizontal alignment (main axis): **justify-content**
+- Vertical alignment (cross axis): **align-items**
+
+```css
+.container {
+  justify-content: center; /* centers items along the main axis */
+}
+```
+
+```css
+.container {
+  align-items: center; /* centers items along the cross axis */
+}
+```
+
+- You can combine both to align and justify content both vertically and horizontally.
+
+```css
+.container {
+  align-items: center; /* centers items along the cross axis */
+  justify-content: center; /* centers items along the main axis */
+}
+```
+
+### `Flex Items and their Attributes`
+
+Once you define your flexbox, all elements inside it become **flex items**. You can manipulate them with these attributes.
+
+- Growing and Shrinking Items: **flex-grow** and **flex-shrink**
+
+```css
+.item {
+  flex-grow: 1; /* allows the item to grow */
+  flex-shrink: 0; /* prevents the item from shrinking */
+}
+```
+
+- Setting the Base Size: **flex-basis**
+
+```css
+.item {
+  flex-basis: 200px; /* sets the default size of an item */
+}
+```
+
+- Aligning Single Items: **align-self**
+
+```css
+.item {
+  align-self: flex-start; /* aligns this item at the start of the cross axis */
+}
+```
+
+### `Nested Flex Containers`
+
+Flex containers can be nested inside other flex containers, allowing for more intricate layouts (this gets complicated).
+
+```css
+.outer-container {
+  display: flex;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+**Note**: While flexbox is powerful tool, it can get complicated quickly. It is often advisable to plan your flexboxes and items with a resources as in the links below. These will help you design your layout and generate the CSS automatically for you.
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
+## `Grid`
+
+**[Try it here](https://jsfiddle.net/)**
+
+---
+
 ## `Useful Links`
 
 - [devdocs](https://devdocs.io/)
@@ -1191,3 +1334,7 @@ CSS flexbox and grid are two extremely powerful tools for responsive design. Due
 ### `Grid`
 
 - [Grid Layout Generator](https://grid.layoutit.com/)
+
+```
+
+```
