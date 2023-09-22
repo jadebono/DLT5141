@@ -684,7 +684,7 @@ Colors play a vital role in web design, influencing both the aesthetics and the 
 
 ### `Color Attributes`
 
-There are two main color attributes: **color** and **background-color**. They have a number of values that will be listed in the appropriate sections below
+There are two main color attributes: **color** and **background-color**. They have a number of values that will be listed in the appropriate sections below.
 
 1. **color**: sets the color of text in an element.
 1. **background-color**: sets the color of the background of the element.
@@ -1164,7 +1164,7 @@ Sometimes, certain content might be more relevant on desktop than on mobile, or 
 
 ### `CSS Flexbox and Grid`
 
-CSS flexbox and grid are two extremely powerful tools for responsive design. Due to their power and importance they will be treated in their own individual sections below
+CSS flexbox and grid are two extremely powerful tools for responsive design. Due to their power and importance they will be treated in their own individual sections below.
 
 **[Try it here](https://jsfiddle.net/)**
 
