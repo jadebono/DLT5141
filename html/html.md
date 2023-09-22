@@ -525,11 +525,13 @@ The caption HTML element specifies the caption (or title) of a table. Nest it ju
 </table>
 ```
 
-**Note:** This will create an extremely ugly table. Style it with CSS or a CSS framework.
+**Notes:**
+
+- This will create an extremely ugly table. Style it with CSS or a CSS framework.
+- **Block-Level:** The table element is a block-level element.
+- The Table element is somewhat deprecated nowadays. It's much more effective to use CSS grid to create and style tables.
 
 **[Try it here](https://jsfiddle.net/)**
-
-**Block-Level:** The table element is a block-level element.
 
 ---
 
