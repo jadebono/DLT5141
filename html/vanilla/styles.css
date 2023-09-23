@@ -56,6 +56,7 @@ button {
   background-color: #009688; /* Teal */
   color: #eceff1;
   cursor: pointer;
+  border-radius: 5%;
 }
 
 /* button and #clearButton hover */
@@ -69,6 +70,7 @@ button:hover,
 /* clear button */
 #clearButton {
   background-color: red; /* danger */
+  border-radius: 5%;
 }
 
 /* Styles for grid ingredients container and main image */
