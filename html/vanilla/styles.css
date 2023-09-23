@@ -1,24 +1,146 @@
+/* Basic Selectors and Properties */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* Base font size */
+  font-weight: 400; /* Regular font weight */
+  line-height: 1.5; /* Comfortable line height for reading */
+  margin: 0;
+  padding: 0;
+  background-color: #eceff1; /* Light Grey */
+  color: #455a64; /* Deep Blue Grey */
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #eceff1;
+}
+
+h1,
+h2 {
+  color: #607d8b; /* Blue Grey */
+}
+
 h1 {
-  margin: 10px auto;
-  text-align: center;
-  padding: 1px;
-  background-color: red;
-  color: white;
-  font-weight: bold;
+  font-size: 2.5em;
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 10px;
 }
 
-.secondTitle {
-  margin: 10px auto;
-  text-align: center;
-  padding: 1px;
-  background-color: green;
-  color: white;
+h2 {
+  font-size: 2em;
+  font-weight: 500; /* Medium font weight */
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+/* The Box Model */
+header,
+section,
+footer {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #eceff1;
 }
 
-#thirdTitle {
-  margin: 10px auto;
+/* Advanced Selectors */
+section:nth-child(odd) {
+  background-color: #eceff1;
+}
+
+/* Transitions */
+button:hover {
+  background-color: #455a64; /* Deep Blue Grey */
+  color: #eceff1;
+  transition: background-color 0.3s ease;
+}
+
+/* Styles for flex ingredients container and main image */
+.img-ingredients-flex {
+  display: flex;
+  gap: 20px;
+  max-width: 100%; /* ensure the flex container doesn't exceed the width of its parent */
+  align-items: center; /* align children to the start of the container */
+  flex-wrap: wrap; /* allow content to wrap if it doesn't fit */
+}
+
+.main-image {
+  flex: 1;
+  max-width: 38%; /* max width of half the container */
+  height: auto; /* maintain the image's aspect ratio */
+}
+
+.ingredients {
+  flex: 1;
+  max-width: 50%; /* max width of half the container */
+}
+
+/* Flexbox */
+.wine-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wine-flex .wine-card {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #eceff1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wine-flex .wine-card figure img {
+  width: 100%;
+  display: block;
+}
+
+.wine-flex .wine-card figure figcaption {
   text-align: center;
-  padding: 1px;
-  background-color: blue;
-  color: white;
+  padding: 10px 0;
+  background-color: #009688; /* Teal */
+  color: #eceff1;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Other styles for aesthetics */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #009688; /* Teal */
+  color: #eceff1;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .img-ingredients-flex {
+    flex-direction: column;
+  }
+
+  .ingredients {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wine-flex {
+    flex-direction: column;
+  }
+
+  .wine-flex .wine-card {
+    flex: 1 1 100%;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
 }
