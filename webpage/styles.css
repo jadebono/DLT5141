@@ -85,9 +85,13 @@ button:hover,
 .ingredients,
 .main-image {
   width: 90%; /* Make sure they occupy the full width of their respective columns */
+  border: 5px solid #607d8b;
+  border-radius: 5px;
 }
 .ingredients {
   background-color: white !important;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 .main-image {
   height: auto; /* maintain the image's aspect ratio */

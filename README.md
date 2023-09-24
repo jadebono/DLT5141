@@ -25,23 +25,22 @@
 ## `2. Basics of HTML`
 
 - **[Basics of HTML Elements and Attributes](/html/html.md)**
-- **[HTML Exercises](/html/html.md)**
-- **[Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/html/vanilla/index.html)**
-- **[Jamie Oliver's Roast Leg of Lamb - HTML+Tailwind+Javascript](/html/tailwind/src/index.html)**
+- **[HTML Exercises](/html/html_exercises.md)**
+- **[Jamie Oliver's Roast Leg of Lamb - HTML+CSS+Javascript](/webpage/index.html)**
 
 ---
 
 ## `3. Basics of CSS`
 
-- **[Basic Concepts of CSS](/html/css.md)**
-- **[CSS Exercises]()**
+- **[Basic Concepts of CSS](/css/css.md)**
+- **[CSS Exercises](/css_exercises/css.md)**
 
 ---
 
 ## `4. Basics of Javascript`
 
-- **[Basics of JavaScript](./javascript.md)**
-- **[Javascript Exercises]()**
+- **[Basics of JavaScript](/javascript/javascript.md)**
+- **[Javascript Exercises](/javascript_exercises/javascript.md)**
 
 ---
 
