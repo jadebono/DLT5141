@@ -2,12 +2,13 @@
 
 [Return to main page](../README.md)
 
+---
+
 **Important Notes:**
 
 1. There is a difference between an element and a tag.
-
-- An element contains a set of tags with attributes and their values;
-- a tag is a set of characters opening and closing an element.
+   - An element contains a set of tags with attributes and their values.
+   - A tag is a set of characters opening and closing an element.
 
 Example:
 
@@ -21,9 +22,8 @@ Example:
 `<a href="https://developer.mozilla.org/">Mozilla Developer Resources</a>` - This is the entire element.
 
 2. Tags can be both **container tags** and **self-closing tags**.
-
-- A container tag needs both opening and closing tags to enclose an element. The closing tag starts with a forward slash: `<p></p>`.
-- A self-closing tag doesn't contain an element so it doesn't need an opening or closing tag. It can simply be declared as a closing tag:
+   - A container tag needs both opening and closing tags to enclose an element. The closing tag starts with a forward slash: `<p></p>`.
+   - A self-closing tag doesn't contain an element so it doesn't need an opening or closing tag. It can simply be declared as a closing tag:
 
 ```html
 <img
@@ -40,9 +40,8 @@ In modern HTML5, you don't need the forward slash at the end of the self-closing
 ```
 
 3. Some attributes have values, some do not.
-
-- src in this example has a
-  link as a value:
+   - src in this example has a
+     link as a value:
 
 ```html
 <img
@@ -50,7 +49,7 @@ In modern HTML5, you don't need the forward slash at the end of the self-closing
 />
 ```
 
-- in this example of an a element, the attribute download does not have a value, it just downloads the file when you click on it:
+    - in this example of an a element, the attribute download does not have a value, it just downloads the file when you click on it:
 
 ```html
 <a
@@ -61,6 +60,14 @@ In modern HTML5, you don't need the forward slash at the end of the self-closing
 ```
 
 4. Attributes do not have an order, and can be in any order from left to right, but if you put them in alphabetical order it will be much easier to work out if you're missing any.
+
+---
+
+## `The Model Web Page`
+
+These set of exercises are intended to consolidate the materials covered in [Basics of HTML Elements and Attributes](/html/html.md) by taking you gradually through the steps to recreate the model web page here: [Jamie Oliver's Roast Leg of Lamb](../webpage/index.html). All resources are in the [web page folder](../webpage/). You are welcome to make use of these resources to recreate this web or create your own web page with your own resources. 
+
+---
 
 ## `Question 1 - The DOCTYPE declaration`
 
