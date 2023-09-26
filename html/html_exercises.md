@@ -22,14 +22,15 @@ Example:
 `<a href="https://developer.mozilla.org/">Mozilla Developer Resources</a>` - This is the entire element.
 
 2. Tags can be both **container tags** and **self-closing tags**.
+
    - A container tag needs both opening and closing tags to enclose an element. The closing tag starts with a forward slash: `<p></p>`.
    - A self-closing tag doesn't contain an element so it doesn't need an opening or closing tag. It can simply be declared as a closing tag:
 
-```html
-<img
-  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-/>
-```
+   ```html
+   <img
+     src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+   />
+   ```
 
 In modern HTML5, you don't need the forward slash at the end of the self-closing tag (although it is still advisable). This is also valid in HTML5:
 
@@ -40,24 +41,24 @@ In modern HTML5, you don't need the forward slash at the end of the self-closing
 ```
 
 3. Some attributes have values, some do not.
-   - src in this example has a
-     link as a value:
 
-```html
-<img
-  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-/>
-```
+   - `src` in this example has a link as a value:
 
-    - in this example of an a element, the attribute download does not have a value, it just downloads the file when you click on it:
+     ```html
+     <img
+       src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+     />
+     ```
 
-```html
-<a
-  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-  download
-  >Download the image</a
->
-```
+   - In this example of an `a` element, the attribute `download` does not have a value, it just downloads the file when you click on it:
+
+     ```html
+     <a
+       src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+       download
+       >Download the image</a
+     >
+     ```
 
 4. Attributes do not have an order, and can be in any order from left to right, but if you put them in alphabetical order it will be much easier to work out if you're missing any.
 
@@ -65,7 +66,7 @@ In modern HTML5, you don't need the forward slash at the end of the self-closing
 
 ## `The Model Web Page`
 
-These set of exercises are intended to consolidate the materials covered in [Basics of HTML Elements and Attributes](/html/html.md) by taking you gradually through the steps to recreate the model web page here: [Jamie Oliver's Roast Leg of Lamb](../webpage/index.html). All resources are in the [web page folder](../webpage/). You are welcome to make use of these resources to recreate this web or create your own web page with your own resources. 
+These set of exercises are intended to consolidate the materials covered in [Basics of HTML Elements and Attributes](/html/html.md) by taking you gradually through the steps to recreate the model web page here: [Jamie Oliver's Roast Leg of Lamb](../webpage/index.html). All resources are in the [web page folder](../webpage/). You are welcome to make use of these resources to recreate this web or create your own web page with your own resources.
 
 ---
 
@@ -305,6 +306,69 @@ Solution:
   </head>
   <body></body>
 </html>
+```
+
+---
+
+## `Question 10 - Insert a Main element`
+
+At the top of your `<body>` element, insert a `<main>` element.
+
+Solution:
+
+```html
+<body>
+  <main></main>
+</body>
+```
+
+---
+
+## `Question 11 - Insert a Header Element`
+
+At the top of your `<main>` element, insert a `<header>` element and inside it nest an `<h1>` element. Give your `<h1>` element a title such as "Roast Leg of Lamb by Jamie Oliver". This will be the main title of your web page.
+
+Solution:
+
+```html
+<header>
+  <h1>Roast Leg of Lamb by Jamie Oliver</h1>
+</header>
+```
+
+---
+
+## `Question 12 - Create a div`
+
+Under the `<header>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients".
+
+Solution:
+
+```html
+<div class="grid-container">
+  <section class="ingredient"></section>
+</div>
+```
+
+---
+
+## `Question 13 - Create h2 and ul elements`
+
+In your section called ingredients nest a `<h2>` element and an unordered list. The `<h2>` element should contain the text "Ingredient:" while the unordered list should contain your list of ingredients.
+
+```html
+<h2>Ingredients:</h2>
+<ul>
+  <li>1 leg of lamb (2.4 kg)</li>
+  <li>Garlic</li>
+  <li>Rosemary</li>
+  <li>Anchovy</li>
+  <li>Olive oil</li>
+  <li>Salt and pepper</li>
+  <li>Carrot (chunky bits)</li>
+  <li>Celery (a couple of stalks)</li>
+  <li>Onions (a couple)</li>
+</ul>
 ```
 
 ---
