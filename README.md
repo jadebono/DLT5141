@@ -33,14 +33,14 @@
 ## `3. Basics of CSS`
 
 - **[Basic Concepts of CSS](/css/css.md)**
-- **[CSS Exercises](/css_exercises/css.md)**
+- **[CSS Exercises](/css/css_exercises.md)**
 
 ---
 
 ## `4. Basics of Javascript`
 
 - **[Basics of JavaScript](/javascript/javascript.md)**
-- **[Javascript Exercises](/javascript_exercises/javascript.md)**
+- **[Javascript Exercises](/javascript/js_exercises.md)**
 
 ---
 
