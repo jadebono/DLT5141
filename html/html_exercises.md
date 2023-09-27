@@ -338,9 +338,15 @@ Solution:
 
 ---
 
-## `Question 12 - Create a div`
+## `Creating a Table`
 
-Under the `<header>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients".
+In the next cluster of questions, you will create your first visual element of the page, which is a table. However you will not be using the `<table>` and its related elements for this task. Today, the `<table>` element is rather long in the tooth and a much better alternative is CSS Grid. The next cluster of elements that you will create will form a table once you style it appropriately using CSS Grid. You will do this in your CSS exercises.
+
+---
+
+### `Question 12 - Create a div`
+
+Under the `<header>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients". "grid-containter" is the parent container of your grid, while "ingredient" is its first child element, the first cell in the two-celled row that our table will consist of.
 
 Solution:
 
@@ -352,7 +358,7 @@ Solution:
 
 ---
 
-## `Question 13 - Create h2 and ul elements`
+### `Question 13 - Create h2 and ul elements`
 
 In your section called ingredients nest a `<h2>` element and an unordered list. The `<h2>` element should contain the text "Ingredient:" while the unordered list should contain your list of ingredients.
 
@@ -370,5 +376,27 @@ In your section called ingredients nest a `<h2>` element and an unordered list. 
   <li>Onions (a couple)</li>
 </ul>
 ```
+
+---
+
+### `Question 14 - Create an img element`
+
+Create an `<img>` element with a class name of main-image. The src attribute should take the path of your roast lamb image (in the img folder). This `<img>` element is the second cell of the table we are creating with CSS Grid.
+
+Solution:
+
+```html
+<img
+  class="main-image"
+  src="../webpage/img/leg_medium_rare.jpg"
+  alt="A roast leg of lamb cooked medium-rare"
+/>
+```
+
+---
+
+### `Question 15 - Create another section`
+
+Solution:
 
 ---
