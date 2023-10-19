@@ -249,7 +249,7 @@ Solution:
 
 ## `Question 8 - Create and link your css file`
 
-Create your css file in your root folder and link it in the head element just above the title element.
+Create your css file in your root folder and link it in the head element just above the title element. For now keep the css file empty.
 
 Hints:
 
@@ -280,7 +280,7 @@ Solution:
 
 ## `Question 9 - Create and link your javascript file`
 
-Create your javascript file in your root folder and link it in the head element just above the title element.
+Create your javascript file in your root folder and link it in the head element just above the title element. For now keep the javascript file empty.
 
 Hints:
 
@@ -310,7 +310,7 @@ Solution:
 
 ---
 
-## `Question 10 - Insert a Main element`
+## `Question 10 - Insert a main element`
 
 At the top of your `<body>` element, insert a `<main>` element.
 
@@ -324,7 +324,7 @@ Solution:
 
 ---
 
-## `Question 11 - Insert a Header Element`
+## `Question 11 - Insert a header Element`
 
 At the top of your `<main>` element, insert a `<header>` element and inside it nest an `<h1>` element. Give your `<h1>` element a title such as "Roast Leg of Lamb by Jamie Oliver". This will be the main title of your web page.
 
@@ -338,13 +338,13 @@ Solution:
 
 ---
 
-## `Creating a Table`
+## `Creating a table`
 
 In the next cluster of questions, you will create your first visual element of the page, which is a table. However you will not be using the `<table>` and its related elements for this task. Today, the `<table>` element is rather long in the tooth and a much better alternative is CSS Grid. The next cluster of elements that you will create will form a table once you style it appropriately using CSS Grid. You will do this in your CSS exercises.
 
 ---
 
-### `Question 12 - Create a div`
+## `Question 12 - Create a div`
 
 Under the `<header>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients". "grid-containter" is the parent container of your grid, while "ingredient" is its first child element, the first cell in the two-celled row that our table will consist of.
 
@@ -358,7 +358,7 @@ Solution:
 
 ---
 
-### `Question 13 - Create h2 and ul elements`
+## `Question 13 - Create h2 and ul elements`
 
 In your section called ingredients nest a `<h2>` element and an unordered list. The `<h2>` element should contain the text "Ingredient:" while the unordered list should contain your list of ingredients.
 
@@ -379,7 +379,7 @@ In your section called ingredients nest a `<h2>` element and an unordered list. 
 
 ---
 
-### `Question 14 - Create an img element`
+## `Question 14 - Create an img element`
 
 Below your section called "ingredients" and inside the div called "grid-container" create an `<img>` element with a class name of main-image. The src attribute should take the path of your roast lamb image (in the img folder). This `<img>` element is the second cell of the table we are creating with CSS Grid.
 
@@ -395,7 +395,7 @@ Solution:
 
 ---
 
-### `Question 15 - Create a section`
+## `Question 15 - Create a section`
 
 Under your div called "grid-container", create a `<section>` element. In this section, create an `<h2>` element with the text "Preparation:". Under the `<h2>` element, create an ordered list with the following text:
 
@@ -433,7 +433,7 @@ Solution:
 
 ---
 
-### `Question 16 - Create a section`
+## `Question 16 - Create a section`
 
 Underneath the previous section, create another section. This section should contain an `<h2>` element with the text "Trivet Preparation:", and an ordered list with the following text:
 
@@ -484,7 +484,7 @@ Solution:
 
 ---
 
-### `Question 17 - Create a section`
+## `Question 17 - Create a section`
 
 Underneath the previous section, create another section. This section should contain an `<h2>` element with the text "Roasting:", and an ordered list with the following text:
 
@@ -555,7 +555,7 @@ Solution:
 
 ---
 
-### `Question 18 - Create a section`
+## `Question 18 - Create a section`
 
 Underneath the previous section, create another section. This section should contain an `<h2>` element with the text "Serving Suggestions:", and an ordered list with the following text:
 
@@ -612,7 +612,7 @@ Solution:
 
 ---
 
-### `Question 19 - Create a section`
+## `Question 19 - Create a section`
 
 Create another section, within it create an `<h2>` element with the text "Wine Pairing Suggestions:".
 
@@ -626,7 +626,7 @@ Solution:
 
 ---
 
-### `Question 20 - Create a section`
+## `Question 20 - Create a section`
 
 In the section in Question 19, create a `<div>` element with a classname of wine-flex.
 
@@ -641,7 +641,7 @@ Solution:
 
 ---
 
-### `Question 21 - Create a Wine Card`
+## `Question 21 - Create a wine card`
 
 In the div in Question 20, create a `<div>` element with a classname of wine-card and an id of "wine1". In this div, create a `<figure>` element. In figure, create an `<img>` element. The src attribute should take the path of your Cabernet Sauvignon image (in the img folder). Give it an alt of Cabernet Sauvignon. Below, give it a `<figcaption>` of Cabernet Sauvignon.
 
@@ -666,7 +666,7 @@ Solution:
 
 ---
 
-### `Question 21 - Create the other Wine Cards`
+## `Question 21 - Create the other wine cards`
 
 Repeat this for all the wine images in the img folder. Remember to give them an id of wine2, wine3, etc.
 
@@ -718,3 +718,161 @@ Solution:
   </div>
 </section>
 ```
+
+---
+
+## `Question 22 - Create a section`
+
+Create a section and in it place an `<h2>` element with the text "Temperature Converter:"
+
+Solution:
+
+```html
+<section>
+  <h2>Temperature Converter:</h2>
+</section>
+```
+
+---
+
+## `Question 22 - Create a Form`
+
+In the section in the question above, create a `<form>` element. In it create a `<fieldset>` element. In the fieldset element insert a `<legend>` element with the title "Convert Temperatures".
+
+Solution:
+
+```html
+<section>
+  <h2>Temperature Converter:</h2>
+  <form>
+    <fieldset>
+      <legend>Convert Temperatures</legend>
+    </fieldset>
+  </form>
+</section>
+```
+
+---
+
+## `Question 22 - Create an input for the fahrenheit field`
+
+Below the legend element in the form above, create a `<label>` element and its corresponding `<input>` element. The label element should have a `for` attribute the value of which should be "fahrenheit". The input element should have the `type`, `id` and `name` attributes. The type attribute should have a value of "text". The id attribute should have the value of "fahrenheit" which links to the label with the for="fahrenheit" attribute=value pair. The name attribute should have a value of "fahrenheit".
+
+Solution:
+
+```html
+<label for="fahrenheit">Fahrenheit:</label>
+<input type="text" id="fahrenheit" name="fahrenheit
+```
+
+---
+
+## `Question 23 - Create an input for the celsius field`
+
+Below the Fahrenheit label/input elements in the form above, create a `<label>` element and its corresponding `<input>` element. The label element should have a `for` attribute the value of which should be "celsius". The input element should have the `type`, `id` and `name` attributes. The type attribute should have a value of "text". The id attribute should have the value of "celsius" which links to the label with the for="celsius" attribute=value pair. The name attribute should have a value of "celsius".
+
+Solution:
+
+```html
+<label for="celsius">Celsius:</label>
+<input type="text" id="celsius" name="celsius
+```
+
+---
+
+## `Question 24 - Create a submit button`
+
+Below the Celsius label/input elements, create a `<button>` element with an attribute of "type" that has the value of "submit". It should have "Convert" between the element's tags.
+
+```html
+<button type="submit">Convert</button>
+```
+
+---
+
+## `Question 25 - Create a clear button`
+
+Below the submit button, create another `<button>` element with an attribute of "type" that has the value of "button". Give it an "id" attribute with the value of "clearButton". It should have "Clear" between the element's tags.
+
+Solution:
+
+```html
+<button type="button" id="clearButton">Clear</button>
+```
+
+---
+
+## `Question 26 - Create a text paragraph`
+
+Below the clear button, insert a `<p>` element containing the following text:
+
+"To use the converter, insert a value in either the fahrenheit or celsius field and click on the convert button. If you fill both fields with values, the code will convert only the fahrenheit value to celsius. IMPORTANT! Click on the clear button to clear the fields before you try a new conversion."
+
+Format the text anyway you like.
+
+Solution:
+
+```html
+<section>
+  <h2>Temperature Converter:</h2>
+  <form>
+    <fieldset>
+      <legend>Convert Temperatures</legend>
+      <label for="fahrenheit">Fahrenheit:</label>
+      <input type="text" id="fahrenheit" name="fahrenheit" />
+      <label for="celsius">Celsius:</label>
+      <input type="text" id="celsius" name="celsius" />
+      <button type="submit">Convert</button>
+      <button type="button" id="clearButton">Clear</button>
+      <p>
+        To use the converter, insert a value in either the
+        <strong>fahrenheit</strong> or <strong>celsius</strong> field and click
+        on the convert button. If you fill both fields with values, the code
+        will convert only the <strong>fahrenheit</strong> value to
+        <strong>celsius</strong>.<br />
+        <strong>IMPORTANT!</strong> Click on the clear button to clear the
+        fields before you try a new conversion.
+      </p>
+    </fieldset>
+  </form>
+</section>
+```
+
+---
+
+## `Question 27 - Embed a YouTube video`
+
+Create a section element. Go to [How to Cook a Leg of Lamb | Jamie Oliver](https://youtu.be/Szv5Yx7xdyM). Click on the YouTube share button, get the embed code and paste it in the between your section elements.
+
+Solution:
+
+```html
+   <section>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Szv5Yx7xdyM?si=dvTS6UOQlLjDY6ov"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+```
+
+---
+
+## `Question 28 - Create a footer`
+
+Create a `<footer>` element. In it insert a `p` element with the text "Recipe courtesy of Jamie Oliver.
+
+Solution:
+
+```html
+<footer>
+  <p>Recipe courtesy of Jamie Oliver</p>
+</footer>
+```
+
+---
