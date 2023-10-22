@@ -5,14 +5,15 @@
 ## `Table of Contents`
 
 - [1. How the Web Works](#1-how-the-web-works)
-- [2. Basics of HTML](#2-basics-of-html)
-- [3. Basics of CSS](#3-basics-of-css)
-- [4. Basics of Javascript](#4-basics-of-javascript)
-- [5. Final Project and Presentation](#5-final-project-and-presentation)
-- [6. Online Tools](#6-online-tools)
-- [7. Docs](#7-docs)
-- [8. Video Tutorials](#8-video-tutorials)
-- [9. General Resources](#9-general-resources)
+- [2. Getting Started with VS Code](#2-getting-started-with-vs-code)
+- [3. Basics of HTML](#2-basics-of-html)
+- [4. Basics of CSS](#3-basics-of-css)
+- [5. Basics of Javascript](#4-basics-of-javascript)
+- [6. Final Project and Presentation](#5-final-project-and-presentation)
+- [7. Online Tools](#6-online-tools)
+- [8. Docs](#7-docs)
+- [9. Video Tutorials](#8-video-tutorials)
+- [10. General Resources](#9-general-resources)
 
 ---
 
@@ -22,7 +23,13 @@
 
 ---
 
-## `2. Basics of HTML`
+## `2. Getting Started with VS Code`
+
+- **[Getting Started with VS Code](/vs_code.md)**
+
+---
+
+## `3. Basics of HTML`
 
 - **[Basics of HTML Elements and Attributes](/html/html.md)**
 - **[HTML Exercises](/html/html_exercises.md)**
@@ -30,27 +37,27 @@
 
 ---
 
-## `3. Basics of CSS`
+## `4. Basics of CSS`
 
 - **[Basic Concepts of CSS](/css/css.md)**
 - **[CSS Exercises](/css/css_exercises.md)**
 
 ---
 
-## `4. Basics of Javascript`
+## `5. Basics of Javascript`
 
 - **[Basics of JavaScript](/javascript/javascript.md)**
 - **[Javascript Exercises](/javascript/js_exercises.md)**
 
 ---
 
-## `5. Final Project and Presentation`
+## `6. Final Project and Presentation`
 
 - **Design, build, and present a simple web page with combining HTML, CSS and Javascript**
 
 ---
 
-## `6. Online Tools`
+## `7. Online Tools`
 
 - [Codepen](https://codepen.io/)
 - [Fiddle](https://jsfiddle.net/)
@@ -59,13 +66,13 @@
 
 ---
 
-## `7. Docs`
+## `8. Docs`
 
 - [devdocs](https://devdocs.io/)
 
 ---
 
-## `8. Video Tutorials`
+## `9. Video Tutorials`
 
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
@@ -77,7 +84,7 @@
 
 ---
 
-## `9. General Resources`
+## `10. General Resources`
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
 

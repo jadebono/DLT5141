@@ -72,7 +72,7 @@ These set of exercises are intended to consolidate the materials covered in [Bas
 
 ## `Question 1 - The DOCTYPE declaration`
 
-Insert a DOCTYPE declaration at the beginning of your new index.html document.
+Create a new index.html document. Insert a DOCTYPE declaration at the beginning of your new index.html document.
 
 Hints:
 

@@ -28,37 +28,57 @@ Source: [The HTML DOM (Document Object Model)](https://www.w3schools.com/js/js_h
 
 ## `Table of Contents`
 
-- [Doctype Declaration](#doctype-declaration)
-- [html element](#html-element)
-- [head element](#head-element)
-- [title element](#title-element)
-- [body element](#body-element)
-- [Important Notes](#important-notes)
-- [main element](#main-element)
-- [h elements](#h-elements)
-- [p element](#p-element)
-- [ul element with li element](#ul-element-with-li-element)
-- [ol element with li element](#ol-element-with-li-element)
-- [table element](#table-element)
-- [img tag](#img-tag)
-- [figure element](#figure-element)
-- [figcaption element](#figcaption-element)
-- [a element](#a-element)
-- [video element](#video-element)
-- [iframe element](#iframe-element)
-- [form element](#form-element)
-- [form element: fieldset element](#form-element-fieldset-element)
-- [form element: legend element](#form-element-legend-element)
-- [input tag](#input-tag)
-- [form element: label element](#form-element-label-element)
-- [form element: button element](#form-element-button-element)
-- [div element](#div-element)
-- [span element](#span-element)
-- [section element](#section-element)
-- [footer element](#footer-element)
-- [Validation](#validation)
-- [Go Beyond](#go-beyond)
-- [Useful Links](#useful-links)
+- [`Common HTML Elements and Attributes`](#common-html-elements-and-attributes)
+  - [`The HTML Document Object Model Tree`](#the-html-document-object-model-tree)
+  - [`Table of Contents`](#table-of-contents)
+  - [`Doctype Declaration`](#doctype-declaration)
+  - [`html element`](#html-element)
+    - [`html attributes:`](#html-attributes)
+  - [`head element`](#head-element)
+    - [`meta tag`](#meta-tag)
+    - [`The link tag`](#the-link-tag)
+    - [`The script element`](#the-script-element)
+  - [`title element`](#title-element)
+  - [`body element`](#body-element)
+  - [`Important Notes`](#important-notes)
+    - [`List of block-Level elements`](#list-of-block-level-elements)
+    - [`List of inline-Level elements`](#list-of-inline-level-elements)
+  - [`main element`](#main-element)
+  - [`h elements`](#h-elements)
+  - [`p element`](#p-element)
+  - [`ul element with li element`](#ul-element-with-li-element)
+  - [`ol element with li element`](#ol-element-with-li-element)
+  - [`table element`](#table-element)
+    - [`thead element`](#thead-element)
+    - [`tr element`](#tr-element)
+    - [`th element`](#th-element)
+    - [`tbody element`](#tbody-element)
+    - [`td element`](#td-element)
+    - [`caption element`](#caption-element)
+  - [`img tag`](#img-tag)
+    - [`img attributes`](#img-attributes)
+  - [`figure element`](#figure-element)
+  - [`figcaption element`](#figcaption-element)
+  - [`a element`](#a-element)
+    - [`a attributes`](#a-attributes)
+  - [`video element`](#video-element)
+    - [`video attributes`](#video-attributes)
+  - [`iframe element`](#iframe-element)
+    - [`iframe attributes`](#iframe-attributes)
+  - [`form element`](#form-element)
+    - [`form attributes`](#form-attributes)
+  - [`form element: fieldset element`](#form-element-fieldset-element)
+  - [`form element: legend element`](#form-element-legend-element)
+  - [`input tag`](#input-tag)
+  - [`form element: label element`](#form-element-label-element)
+  - [`form element: button element`](#form-element-button-element)
+  - [`div element`](#div-element)
+  - [`span element`](#span-element)
+  - [`section element`](#section-element)
+  - [`footer element`](#footer-element)
+  - [`Validation`](#validation)
+  - [`Go Beyond`](#go-beyond)
+  - [`Useful Links`](#useful-links)
 
 ---
 
@@ -98,7 +118,7 @@ The html element can take the [global attributes](https://developer.mozilla.org/
 
 ## `head element`
 
-The HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+The head element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +173,7 @@ The link self-closing tags specifies relationships between the current document 
 
 ### `The script element`
 
-The script HTML element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. It may be placed in other places on the page, but is usually placed in the head element.
+The script element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. It may be placed in other places on the page, but is usually placed in the head element.
 
 ```html
 <!DOCTYPE html>
