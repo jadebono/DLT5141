@@ -183,7 +183,7 @@ button:hover,
 
 ## `Question 10 - Creating a Table with CSS Grid`
 
-While you can create a table with pure html, modern css gives you the far more flexible grid. Target your html `<div>` with the class name of "grid-container". Give it a display of grid, divide the container into two columns of equal width. Set a gap of 20px between the columns. Center the content both vertically and horizontally.
+While you can create a table with pure html, modern css gives you the far more flexible grid. Target your html `<div>` with the class of "grid-container". Give it a display of grid, divide the container into two columns of equal width. Set a gap of 20px between the columns. Center the content both vertically and horizontally.
 
 Solution:
 
@@ -240,10 +240,121 @@ Solution:
 
 ## `Question 12 - Creating the Flexbox for the Wine Cards`
 
+Target your html `<div>` with the class "wine-flex". Give it a display of flex, a justify-content of space-between. Set the flex to wrap, and give it a gap between elements of 20px.
+
 Solution:
 
 ```css
+.wine-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+```
 
+---
+
+## `Question 13 - Styling the Wine Cards`
+
+Your `<div>` with the class "wine-flex" has six descendant `<div>` elements with a class of "wine-card". Target the "wine-card" and give it a flex of 1 1 calc(33.33% - 20px). This will ensure that the card grows or shrinks to take up available space and that it will take up 33% of the screen after deducting 20px space between the cards. Give the element a background color of #eceff1 and rounded corners of 10px. Finally set the overflow to hidden.
+
+Solution:
+
+```css
+.wine-card {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #eceff1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+```
+
+---
+
+## `Question 14 - Styling the image in the Wine Cards`
+
+The `<div>`with the class "wine-card has a `<figure>` element with an `<img>` tag. Select this `<img>` tag using descendant selectors and give it a width of 100% and a display of block.
+
+Solution:
+
+```css
+.wine-card figure img {
+  width: 100%;
+  display: block;
+}
+```
+
+---
+
+## `Question 15 - Styling the figcaption in the Wine Cards`
+
+The `<div>`with the class "wine-card has a `<figure>` element with its own descendant `<figcaption>` element. Select this `<figcaption>` element using descendant selectors and give it a text-align of center, set the top and bottom padding to 10px, and the right and left padding to 0. Give it a background color of #009688 and a font color of #eceff1.
+
+Solution:
+
+```css
+.wine-card figure figcaption {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #009688; /* Teal */
+  color: #eceff1;
+}
+```
+
+---
+
+## `Question 15 - Styling the iframe`
+
+Select the `<iframe>` element and give it a width of 100% and a height of 400px.
+
+Solution:
+
+```css
+iframe {
+  width: 100%;
+  height: 400px;
+}
+```
+
+---
+
+## `Question 16 - Setting up a Media Query for Screens of 768px`
+
+Let us style the element with the ingredient class for screens with a max width of 768px. Create a media query, and nest a style rule for the ingredient element within it. Give it a max-width of 100%.
+
+Solution:
+
+```css
+@media (max-width: 768px) {
+  .ingredients {
+    max-width: 100%;
+  }
+}
+```
+
+---
+
+## `Question 17 - Setting up a Media Query for Screens of 480px`
+
+Set up a media query for screens with a max width of 480px. Select the elements with the grid-container class, the wine-flex class and the wine card class. Give the grid-container a grid-template-columns of 1fr. Give the wine-flex a flex-direction of column and give the wine-card a flex of 1 1 100%.
+
+Solution:
+
+```css
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Use only one column for small screens */
+  }
+
+  .wine-flex {
+    flex-direction: column;
+  }
+
+  .wine-card {
+    flex: 1 1 100%;
+  }
+}
 ```
 
 ---

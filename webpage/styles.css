@@ -34,7 +34,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-
 /* The Box Model */
 header,
 section,
@@ -105,19 +104,19 @@ button:hover,
   gap: 20px;
 }
 
-.wine-flex .wine-card {
+.wine-card {
   flex: 1 1 calc(33.33% - 20px);
   background-color: #eceff1;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.wine-flex .wine-card figure img {
+.wine-card figure img {
   width: 100%;
   display: block;
 }
 
-.wine-flex .wine-card figure figcaption {
+.wine-card figure figcaption {
   text-align: center;
   padding: 10px 0;
   background-color: #009688; /* Teal */
@@ -146,7 +145,7 @@ iframe {
     flex-direction: column;
   }
 
-  .wine-flex .wine-card {
+  .wine-card {
     flex: 1 1 100%;
   }
 }
