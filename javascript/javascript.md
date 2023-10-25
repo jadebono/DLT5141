@@ -1,84 +1,87 @@
-## **Basic Concepts of Computer Programming using JavaScript**
+# **Basic Concepts of Computer Programming using JavaScript**
 
-### **1. Introduction to JavaScript**
+[Return to main page](../README.md)
 
-- **Definition:**
-  - What is JavaScript?
-- **History:**
-  - Brief history and evolution of JavaScript.
-- **Usage:**
-  - Role of JavaScript in web development.
+**Note:** This is a very basic introduction to fundamental concepts of programming. The goal of this introduction is to give you a basic familiarity with the elements and processes that constitute programming.
 
-### **2. Basics of Programming**
+## `Table of Contents`
 
-- **Variables:**
-  - Definition and purpose.
-  - Declaring and initializing variables.
-  - Data types: `string`, `number`, `boolean`, `null`, `undefined`, `object`, and `array`.
-- **Operators:**
+- [Introduction to Javascript](#introduction-to-javascript)
+- [Installing Node](#installing-node)
+- [Hello World](#hello-world)
+- [Variables](#variables)
+- [Types](#types)
+- [Operators](#operators)
+- [Conditionals](#conditionals)
+- [Installing Node](#installing-node)
 
-  - Arithmetic operators: `+`, `-`, `*`, `/`, `%`.
-  - Comparison operators: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`.
-  - Logical operators: `&&`, `||`, `!`.
+## `Introduction to JavaScript`
 
-- **Control Structures:**
+JavaScript (JS) is a lightweight interpreted programming language best known as the scripting language for Web pages. With javascript you can manipulate the elements of a web page to create various effects.
 
-  - **Conditional Statements:**
-    - `if`, `else if`, `else`.
-    - Ternary operator.
-  - **Loops:**
-    - `for`, `while`, `do...while`.
-    - Loop control with `break` and `continue`.
+However, Node.js is a cross-platform JavaScript runtime environment that allows developers to build server-side and network applications with JavaScript. Once you install Node, you will be able to build applications with javascript that run independently from web pages.
 
-- **Functions:**
-  - Definition and purpose.
-  - Declaring and calling functions.
-  - Parameters and return values.
-  - Anonymous functions and arrow functions (`=>`).
+For the purposes of this component of the course, we'll be using node to deliver the basic concepts of programming and experiment with them.
 
-### **3. Advanced JavaScript Concepts**
+## `Installing Node`
 
-- **Objects:**
+Go to the Node website:
 
-  - Creating objects using literal notation.
-  - Accessing and modifying properties.
-  - Methods in objects.
+[Download Node](https://nodejs.org/en)
 
-- **Arrays:**
+Download and install Node. Download the LTS (Long Term Support) not the Current version as the LTS is the most stable. Node comes with npm, the node package manager that allows you to install node packages. To test the installation:
 
-  - Definition and purpose.
-  - Creating and accessing arrays.
-  - Common array methods: `push()`, `pop()`, `shift()`, `unshift()`, `splice()`, `slice()`, `forEach()`, `map()`, `filter()`.
+```bash
+node -v
+npm -v
+```
 
-- **Events:**
-  - Introduction to JavaScript events.
-  - Event listeners and event handlers.
-  - Common events: `click`, `mouseover`, `mouseout`, `keydown`, `keyup`.
+With node, you will be able to run javascript files in your terminal. To do so:
 
-### **4. Introduction to the Document Object Model (DOM)**
+1. In your IDE, create a file ending in .js, such as myfile.js;
+1. Write some code in the file;
+1. In your terminal window at the bottom of your ide, type node myfile.js to run it:
 
-- **What is the DOM?**
+```bash
+touch myfile.js # assuming that you are on Linux or MacOS
+node myfile.js
+```
 
-  - Hierarchical representation of a webpage.
-  - Relationship between HTML and the DOM.
+## `Hello World`
 
-- **DOM Manipulation:**
+Traditionally, the first exercise in programming is to print out the phrase "Hello World" to terminal. In javascript, to print out data to terminal, we use the console.log() method. Console is an object provided by the browser's or node's environment that provides a number of methods (functions forming part of a library or framework) to output data to the browser's console or to the terminal in Node. To use console.log() just put your data in the parentheses of the method:
 
-  - Selecting elements: `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `querySelector()`, `querySelectorAll()`.
-  - Modifying element content: `textContent`, `innerHTML`.
-  - Changing element attributes: `getAttribute()`, `setAttribute()`.
-  - Adding and removing elements: `createElement()`, `appendChild()`, `removeChild()`.
+```js
+console.log("Hello World!");
+```
 
-- **DOM Events:**
-  - Adding event listeners to elements.
-  - Event propagation: event bubbling and capturing.
-  - Preventing default behavior.
+## `Variables`
 
-### **5. Practical Exercises**
+- Definition and purpose.
+- Declaring and initializing variables.
 
-- **Interactive Webpage Elements:**
+## `Types`
 
-  - Creating a button that changes text on a webpage.
+- Data types: `string`, `number`, `boolean`, `null`, `undefined`, `object`, and `array`.
 
-- **Mini Projects:**
-  - Creating a web page with two input boxes to take integers and one output box to display the sum of the inputted integers. Should include error checking to ensure that the inputted data consists of either valid integers or valid floats.
+## `Operators`
+
+- Arithmetic operators: `+`, `-`, `*`, `/`, `%`
+- Comparison operators: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`
+- Logical operators: `&&`, `||`, `!`
+
+## `Conditionals`
+
+- `if`, `else if`, `else`.
+- Ternary operator.
+
+## `Loops`
+
+- `for`, `while`, `do...while`.
+- Loop control with `break` and `continue`.
+
+## `Functions`
+
+- Definition and purpose.
+- Declaring and calling functions.
+- Parameters and return values.
