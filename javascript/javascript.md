@@ -10,6 +10,7 @@
 
 - [Introduction to Javascript](#introduction-to-javascript)
 - [Installing Node](#installing-node)
+- [Comments](#comments)
 - [Hello World](#hello-world)
 - [Variables](#variables)
 - [Types](#types)
@@ -51,6 +52,22 @@ With node, you will be able to run javascript files in your terminal. To do so:
 ```bash
 touch myfile.js # assuming that you are using Linux or MacOS
 node myfile.js
+```
+
+---
+
+## `Comments`
+
+A programming language has a commenting facility to enable the programmer to add comments in the code to add notes and explanations for later reference or other coders. Javascript uses forward slashes `//` for single line comments or `/* */` for block (multiline) comments. Javascript ignores all text following `//` and all text within `/* */`:
+
+```js
+// this line prints the phrase "Hello World"
+console.log(5); // the code will print 5
+
+/* This is a block comment. It can span multiple lines.
+  Javascript will ignore everything between the symbols
+  enclosing the block comment. */
+console.log("Hi!"); // the code will print "Hi!"
 ```
 
 ---
@@ -163,6 +180,7 @@ let aFloat = 3.45621; // decimal float number type
 
 ```js
 let veryBigNumber = 1234567890123456789012345678901234567890n; // this is a bigInt type NOT a number type
+console.log(veryBigNumber); // prints 1234567890123456789012345678901234567890n
 ```
 
 - `boolean` - represent a true or false value, used for logical operations:
@@ -176,14 +194,14 @@ let testNum = 4 > 12; // value of testNum is false
 
 ```js
 let nullVariable = null;
-console.log(nullVariable); // prints out "null"
+console.log(nullVariable); // prints null
 ```
 
 - `undefined` - is a value that represents a variable that has been declared but has not yet been assigned a value. It is the default value assigned to variables that are declared but not initialized;
 
 ```js
 let n;
-console.log(n); // prints out "undefined"
+console.log(n); // prints "undefined"
 ```
 
 - `object` - is a collection of key-value pairs, where each key is a unique string and each value can be of any data type, including other objects or functions. It is enclosed in curly brackets. You can access data in an object using the dot notation like this object.key.
@@ -197,8 +215,8 @@ let myObject = {
   bitcoinLaunch: 2009, // the value here is a number
 };
 
-console.log(myObject); // prints out { name: 'Satoshi', numberOfBitcoins: 21000000, bitcoinLaunch: 2009 }
-console.log(myObject.name); // using dot notation to print out "Satoshi"
+console.log(myObject); // prints { name: 'Satoshi', numberOfBitcoins: 21000000, bitcoinLaunch: 2009 }
+console.log(myObject.name); // using dot notation to print "Satoshi"
 ```
 
 - `array` - an array is a special kind of object used to store multiple values in a single variable. It can hold more than one value (of any type) at a time, with each value accessible by a numerical index. The index starts from 0. Individual items in an array can be accessed using the index, for example array[0] returns the FIRST item in the array:
@@ -207,8 +225,8 @@ console.log(myObject.name); // using dot notation to print out "Satoshi"
 let BITCOINMAXSUPPLY = 21000000;
 let myArray = ["Satoshi", "Nakamoto", 2009, BITCOINMAXSUPPLY, true];
 console.log(myArray); // prints out [ 'Satoshi', 'Nakamoto', 2009, 21000000, true ]
-console.log(myArray[0]); // prints out "Satoshi"
-console.log(myArray[4]); // prints out 4
+console.log(myArray[0]); // prints "Satoshi"
+console.log(myArray[4]); // prints true
 ```
 
 **Notes**:
@@ -217,45 +235,222 @@ console.log(myArray[4]); // prints out 4
 
 ```js
 let greeting = "Hello World";
-console.log(greeting);
+console.log(greeting); // prints "Hello World"
 
 console.log("Hail, my friend!");
 
 let addTwoEvens = 2 + 4;
-console.log(addTwoEvens);
+console.log(addTwoEvens); // prints 6
 
-console.log(2 + 4);
+console.log(2 + 4); // prints 6
 ```
 
 - Trying to manipulate different types in the same operation is a bad idea and will return errors or unexpected outcomes!
 
 ```js
 let impossibleOperation = "my friend" / 2.3; // tries to initialize impossibleOperation with the dividend of a string and a number
-console.log(impossibleOperation); // prints out NaN (not a number)
+console.log(impossibleOperation); // prints NaN (not a number)
 ```
 
 ```js
 let str = "hello";
 let num = 10;
-console.log(str + num); // prints out hello10 of type string
+console.log(str + num); // prints "hello10" of type string
 ```
 
 - Be careful when you update variables. Irrespective of the original type of a variable, you can easily change it to a value of another type. This may create problems if this was not your intention.
 
 ```js
 let myNum = 10; // myNum declared and initialized with the number type of 10
-console.log(myNum / 2); // prints out 5
+console.log(myNum / 2); // prints 5
 myNum = "Hello"; // myNum updated with the string type of "10"
-console.log(myNum / 2); // prints out NaN (not a number)
+console.log(myNum / 2); // prints NaN (not a number)
 ```
 
 ---
 
 ## `Operators`
 
-- Arithmetic operators: `+`, `-`, `*`, `/`, `%`
-- Comparison operators: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`
-- Logical operators: `&&`, `||`, `!`
+Operators in JavaScript are special symbols or keywords that are used to perform operations on operands. They are the building blocks of JavaScript programs, allowing you to manipulate values, compare them, and perform various other operations. There are three different categories of operators:
+
+1. Assignment Operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`;
+1. Arithmetic operators: `+`, `-`, `*`, `/`, `%`;
+1. Comparison operators: `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`;
+1. Logical operators: `&&`, `||`, `!`;
+
+### `1. Assignment Operators`
+
+Assignment operators assign values to a variable
+
+- `=` used to assign a value to a variable:
+
+```js
+let n = 10;
+console.log(n); // prints 10
+```
+
+- `+=` adds a value to a variable:
+
+```js
+let n = 10;
+n += 10; // adds 10 to n
+console.log(n); // prints 20
+```
+
+- `-=` subtracts a value from a variable:
+
+```js
+let n = 100;
+n -= 10; // subtracts 10 from n
+console.log(n); // prints 90
+```
+
+- `*=` multiplies a variable by a value:
+
+```js
+let n = 10;
+n *= 10; // multiplies n by 10
+console.log(n); // prints 100
+```
+
+- `/=` divides a variable by a value:
+
+```js
+let n = 100;
+n /= 2; // divides n by 2
+console.log(n); // prints 50
+```
+
+- `%=` divides a variable by a value and assigns the remainder to that variable:
+
+```js
+let n = 10;
+n %= 3; // n = the remainder of 10 / 3
+console.log(n); // prints 1
+```
+
+### `2. Arithmetic Operators`
+
+Arithmetic operators carry out arithmetic operations:
+
+- `+` adds two numbers:
+
+```js
+let n = 10 + 5;
+console.log(n); // prints 15
+```
+
+- `-` subtracts a number from a number:
+
+```js
+let n = 100 - 10;
+console.log(n); // prints 90
+```
+
+- `*` multiplies a number by another number:
+
+```js
+let n = 10 * 10;
+console.log(n); // prints 100
+```
+
+- `/` divides a number by another number:
+
+```js
+let n = 100 / 2;
+console.log(n); // prints 50
+```
+
+- `%` is called the modulo operator that divides a number by another number and returns the remainder:
+
+```js
+let n = 10 % 3;
+console.log(n); // prints 1
+```
+
+### `3. Comparison Operators`
+
+Comparison operators compare one value with another. Generally the comparison happens between values of the same type, but not necessarily!
+
+- `==` is called "loose equality" and compares the values of two variables irrespective of type:
+
+```js
+let a = 5; // value 5 but type number
+let b = "5"; // value 5 but type string
+let c = a == b; // a is loosely equal to b: resolves to true
+console.log(c); // prints true
+```
+
+- `===` is called "strict equality" that compares the values of two variables for both value AND type:
+
+```js
+let a = 5; // value 5 but type number
+let b = "5"; // value 5 but type string
+let c = a === b; // a is strictly equal to b: resolves to false
+console.log(c); // prints false
+
+let a = "and"; // value "and" of type string
+let b = "and"; // value "and" of type string
+let c = a === b; // a is strictly equal to b: resolves to true
+console.log(c); // prints true
+```
+
+- `!=` is "not equal to" and compares for difference the values of two variables irrespective of type:
+
+```js
+let a = 5; // value 5 but type number
+let b = "5"; // value 5 but type string
+let c = a != b; // a is loosely not equal to b: resolves to false
+console.log(c); // prints false
+```
+
+- `!==` is "strict not equal to" and compares for difference the values AND types of two:
+
+```js
+let a = 5; // value 5 but type number
+let b = "5"; // value 5 but type string
+let c = a !== b; // a is strictly not equal to b: resolves to true
+console.log(c); // prints true
+
+let a = "and"; // value "and" of type string
+let b = "and"; // value "and" of type string
+let c = a !== b; // a is strictly not equal to b: resolves to false
+console.log(c); // prints false
+```
+
+- `<` "less than":
+
+```js
+let a = 5;
+let b = 10;
+let c = a < b;
+console.log(c); // prints true
+```
+
+- `>` "greater than":
+
+```js
+let a = 10;
+let b = 5;
+let c = a > b;
+console.log(c); // prints true
+```
+
+`<=`, `>=`;
+
+**Note:**
+
+- Make sure that you carry out operations on values of the same type since javascript has a facility called "type coercion" through which values are converted from one data type to another automatically. While coercion has its uses, it can lead to unpredictable code so it is better to avoid these situations by ensuring that you are operating on values of the same type.
+
+```js
+let exampleOne = 10 + "5"; // attempts to add a number type to a string type
+console.log(exampleOne); // prints out the string "105" as it coerces the number into a string and concatenates the two strings
+
+let exampleTwo = 10 == "10"; // uses loose equality operator on a number and a string
+console.log(exampleTwo); // prints out true
+```
+
+---
 
 ## `Conditionals`
 
