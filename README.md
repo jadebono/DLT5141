@@ -6,14 +6,15 @@
 
 - [1. How the Web Works](#1-how-the-web-works)
 - [2. Getting Started with VS Code](#2-getting-started-with-vs-code)
-- [3. Basics of HTML](#2-basics-of-html)
-- [4. Basics of CSS](#3-basics-of-css)
-- [5. Basics of Javascript](#4-basics-of-javascript)
-- [6. Final Project and Presentation](#5-final-project-and-presentation)
-- [7. Online Tools](#6-online-tools)
-- [8. Docs](#7-docs)
-- [9. Video Tutorials](#8-video-tutorials)
-- [10. General Resources](#9-general-resources)
+- [3. Cloning this Repo](#3-cloning-this-repo)
+- [4. Basics of HTML](#4-basics-of-html)
+- [5. Basics of CSS](#5-basics-of-css)
+- [6. Basics of Javascript](#6-basics-of-javascript)
+- [7. Final Project and Presentation](#7-final-project-and-presentation)
+- [8. Online Tools](#8-online-tools)
+- [9. Docs](#9-docs)
+- [10. Video Tutorials](#10-video-tutorials)
+- [11. General Resources](#11-general-resources)
 
 ---
 
@@ -29,7 +30,32 @@
 
 ---
 
-## `3. Basics of HTML`
+## `3. Cloning this Repo`
+
+To clone this repo to a local folder and open it in VS Code
+
+1. Navigate to a folder in which you want to download this repo;
+1. clone the repo which will download the repo into its own folder called DLT5141;
+1. Navigate to the DLT5141 folder and open it in VS Code
+
+```bash
+cd repos
+git clone https://github.com/jadebono/DLT5141.git
+cd DLT5141
+code .
+```
+
+to get the latest updates:
+
+```bash
+cd repos/DLT5141
+git pull origin main
+
+```
+
+---
+
+## `4. Basics of HTML`
 
 - **[Basics of HTML Elements and Attributes](/html/html.md)**
 - **[HTML Exercises](/html/html_exercises.md)**
@@ -37,27 +63,27 @@
 
 ---
 
-## `4. Basics of CSS`
+## `5. Basics of CSS`
 
 - **[Basic Concepts of CSS](/css/css.md)**
 - **[CSS Exercises](/css/css_exercises.md)**
 
 ---
 
-## `5. Basics of Javascript`
+## `6. Basics of Javascript`
 
 - **[Basics of JavaScript](/javascript/javascript.md)**
 - **[Javascript Exercises](/javascript/js_exercises.md)**
 
 ---
 
-## `6. Final Project and Presentation`
+## `7. Final Project and Presentation`
 
 - **Design, build, and present a simple web page with combining HTML, CSS and Javascript**
 
 ---
 
-## `7. Online Tools`
+## `8. Online Tools`
 
 - [Codepen](https://codepen.io/)
 - [Fiddle](https://jsfiddle.net/)
@@ -66,13 +92,13 @@
 
 ---
 
-## `8. Docs`
+## `9. Docs`
 
 - [devdocs](https://devdocs.io/)
 
 ---
 
-## `9. Video Tutorials`
+## `10. Video Tutorials`
 
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
@@ -84,7 +110,7 @@
 
 ---
 
-## `10. General Resources`
+## `11. General Resources`
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
 
