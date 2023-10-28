@@ -15,7 +15,9 @@
 - [Variables](#variables)
 - [Types](#types)
 - [Operators](#operators)
+- [Blocks](#blocks)
 - [Conditionals](#conditionals)
+- [Loops](#loops)
 - [Functions](#functions)
 
 ---
@@ -480,18 +482,201 @@ console.log(exampleTwo); // prints out true
 
 ---
 
+## `Blocks`
+
+In JavaScript, a block is a collection of one or more statements enclosed by curly braces {}. A block groups together statements so they are treated as one unit, providing structure to your code. Blocks are commonly used with control flow statements like if, for, while, etc., to group a set of statements to be executed together based on a condition or loop. They are also used to define the code of functions.
+
+example:
+
+```js
+if (true) {
+  // This is a block
+  console.log("The condition is true");
+}
+```
+
+Code in curly braces, called a `block` is isolated from the main sequence of the code and is only executed sequence flows in its direction. Blocks are used to keep the code well organized, efficient and concise as it enables you to put frequently repeating code into a single block and call it when necessary instead of writing it out every time it is needed.
+
+---
+
 ## `Conditionals`
+
+Conditionals are constructs that allow different code paths to be executed based on certain conditions. In javascript code is executed sequentially from top to bottom, in the order they appear in the program but when the subsequent code is an if-block, then it forks into multiple paths depending on the outcome of the logical condition you specify. The main keywords/operators are these:
 
 - `if`, `else if`, `else`.
 - Ternary operator.
 
+The basic syntax of conditionals is this:
+
+```js
+if (condition) {
+  // do something
+} else if (condition) {
+  //do something else
+} else {
+  //do something else
+}
+```
+
+An example is this:
+
+```js
+let x = 10;
+if (x > 10 /* this is the logical condition to be satisfied */) {
+  //if x > 10 do something here
+  console.log("x is greater than 10");
+  //else if x > 10 do something else here
+} else if (x === 10) {
+  //else do something else here
+  console.log("x is 10");
+} else {
+  console.log("x must be smaller than 10!");
+}
+```
+
+In the example above, the code forks down three different paths when it encounters the if-else block.
+
+The ternary operator is a shorthand way of using if-else. The syntax is:
+
+condition ? expressionIfTrue : expressionIfFalse;
+
+```js
+let age = 18;
+age >= 18 // condition to be met
+  ? console.log("You may order a drink") // code executed if condition is met
+  : console.log("You're too young to drink alcoholic drinks"); // code executed if condition is NOT met
+```
+
+**Note:**
+
+- You don't need to use all conditional keywords when setting up a condition. If, if-else, and if conditionals are all valid. Examples:
+
+```js
+let a = "hello";
+// this if-else block will output "Hello to you too!"
+if (a === "hello") {
+  console.log("Hello to you too!");
+} else {
+  console.log("Hello, mate!");
+}
+
+let b = "world";
+// this if-block will output "Hello world!"
+if (b === "world") {
+  console.log("Hello world!");
+}
+```
+
+---
+
 ## `Loops`
 
-- `for`, `while`, `do...while`.
-- Loop control with `break` and `continue`.
+Loops allow for the repeated execution of a block of code as long as a specified condition is met. Common looping constructs are:
+
+1. `while`
+1. `do...while`
+1. `for`
+
+- The `while` loop keeps a block of code looping while the while condition prevails. The basic syntax is:
+
+```js
+while (condition) {
+  // code block to be executed
+}
+```
+
+example:
+
+```js
+let result = ""; // set result to an empty string
+let i = 1; // set i to 1
+while (i <= 5) {
+  // while i is smaller than or equal to 5 repeat the following block of code
+  result += i + " "; // concatenate the value of i with an empty space to the string variable i
+  i += 1; // add 1 to the number variable i
+}
+console.log(result); // outputs "1 2 3 4 5"
+```
+
+- The `do...while` loop is very similar to the while loop except when the condition is checked. With the while loop, the condition is checked at the beginning of the loop. With the do...while loop the condition is checked at the end. This means that a while loop may not execute at all if the condition is false to start off with. With the do...while loop, the code will execute at least once even if the condition is false. The syntax of the `do... while` loop is this:
+
+```js
+do {
+  // code block to be executed
+} while (condition);
+```
+
+example:
+
+```js
+let result = ""; // set result to an empty string
+let i = 0; // set i to 0
+
+do {
+  // start the looping code irrespective of the condition
+  i += 1; // add 1 to the number variable i
+  result += i + " "; // concatenate the value of i with an empty space to the string variable i
+} while (i < 5); // check the condition and repeat the condition until it evaluates to true
+
+console.log(result); // Output: "1 2 3 4 5 "
+```
+
+- The `for` loop is a control flow statement for specifying iteration, which allows code to be executed repeatedly. It's commonly used in many programming languages including JavaScript. A for loop is characterized by three expressions and a statement or block of statements to be executed within the loop:
+
+```js
+for (initialExpression; condition; incrementExpression) {
+  // code block to be executed
+}
+```
+
+1. Initial Expression: This part is executed only once, at the beginning of the loop. It's often used to create a variable to control the loop.
+1. Condition: This expression is checked before every iteration. If the condition evaluates to true, the loop continues; if it evaluates to false, the loop exits.
+1. Increment Expression: This part is executed at the end of every iteration. It's often used to update the loop control variable.
+
+Example:
+
+```js
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+/*
+outputs:
+0
+1
+2
+3
+4
+*/
+```
+
+The `break` and `continue` keywords provide ways of controlling the flow of the loop. The break keyword is used to break out of the loop if a certain condition is met. The continue keyword skips the current loop if a certain condition is met. To use break and continue, you need to combine them with if blocks:
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break; // Exit loop when i is 5
+  }
+  console.log(i); // ouputs the current value of i
+}
+// Output: 0 1 2 3 4
+```
+
+```js
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) {
+    continue; // Skip even numbers
+  }
+  console.log(i); // outputs the current value of i
+}
+// Output: 1 3 5 7 9
+```
+
+---
 
 ## `Functions`
 
 - Definition and purpose.
 - Declaring and calling functions.
 - Parameters and return values.
+
+---
