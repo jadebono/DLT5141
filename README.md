@@ -10,11 +10,10 @@
 - [4. Basics of HTML](#4-basics-of-html)
 - [5. Basics of CSS](#5-basics-of-css)
 - [6. Basics of Javascript](#6-basics-of-javascript)
-- [7. Final Project and Presentation](#7-final-project-and-presentation)
-- [8. Online Tools](#8-online-tools)
-- [9. Docs](#9-docs)
-- [10. Video Tutorials](#10-video-tutorials)
-- [11. General Resources](#11-general-resources)
+- [7. Online Tools](#7-online-tools)
+- [8. Docs](#8-docs)
+- [9. Video Tutorials](#9-video-tutorials)
+- [10. General Resources](#10-general-resources)
 
 ---
 
@@ -77,13 +76,7 @@ git pull origin main
 
 ---
 
-## `7. Final Project and Presentation`
-
-- **Design, build, and present a simple web page with combining HTML, CSS and Javascript**
-
----
-
-## `8. Online Tools`
+## `7. Online Tools`
 
 - [Codepen](https://codepen.io/)
 - [Fiddle](https://jsfiddle.net/)
@@ -92,13 +85,13 @@ git pull origin main
 
 ---
 
-## `9. Docs`
+## `8. Docs`
 
 - [devdocs](https://devdocs.io/)
 
 ---
 
-## `10. Video Tutorials`
+## `9. Video Tutorials`
 
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
@@ -110,7 +103,7 @@ git pull origin main
 
 ---
 
-## `11. General Resources`
+## `10. General Resources`
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
 
