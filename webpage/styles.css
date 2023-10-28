@@ -131,16 +131,23 @@ iframe {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+  }
+
   .ingredients {
-    max-width: 100%;
+    margin: auto;
+  }
+  .main-image {
+    height: auto; /* maintain the image's aspect ratio */
+    margin: auto;
   }
 }
 
 @media (max-width: 480px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Use only one column for small screens */
-  }
-
   .wine-flex {
     flex-direction: column;
   }

@@ -321,14 +321,25 @@ iframe {
 
 ## `Question 16 - Setting up a Media Query for Screens of 768px`
 
-Let us style the element with the ingredient class for screens with a max width of 768px. Create a media query, and nest a style rule for the ingredient element within it. Give it a max-width of 100%.
+Let us style the element with the ingredient class for screens with a max width of 768px. Create a media query. In this media query, we're going to make the element with the class of main-image element stack under the one with the calss of ingredients. Nest a style rules for the `grid-container` and its children elements. Give the element with the class of grid-container a display of grid, make it a grid of one column, and align its items vertically and horizontally in the center. Then set the margin of the element with the class of ingredients to auto. Do the same to the element with the class of main-image and also give it a height of auto.
 
 Solution:
 
 ```css
 @media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
   .ingredients {
-    max-width: 100%;
+    margin: auto;
+  }
+  .main-image {
+    height: auto;
+    margin: auto;
   }
 }
 ```

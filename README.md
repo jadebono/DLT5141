@@ -32,11 +32,11 @@
 
 ## `3. Cloning this Repo`
 
-To clone this repo to a local folder and open it in VS Code
+To clone this repo to a local folder and open it in VS Code:
 
 1. Navigate to a folder in which you want to download this repo;
 1. clone the repo which will download the repo into its own folder called DLT5141;
-1. Navigate to the DLT5141 folder and open it in VS Code
+1. Navigate to the DLT5141 folder and open it in VS Code.
 
 ```bash
 cd repos
