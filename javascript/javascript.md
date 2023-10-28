@@ -495,7 +495,7 @@ if (true) {
 }
 ```
 
-Code in curly braces, called a `block` is isolated from the main sequence of the code and is only executed sequence flows in its direction. Blocks are used to keep the code well organized, efficient and concise as it enables you to put frequently repeating code into a single block and call it when necessary instead of writing it out every time it is needed.
+Code in curly braces, called a `block` is isolated from the main sequence of the code and is only executed sequence flows in its direction. Blocks are used to keep the code well organized, efficient and concise as it enables you to put reusable code into a single block and call it when necessary instead of writing it out every time it is needed.
 
 ---
 
@@ -675,8 +675,41 @@ for (let i = 0; i < 10; i++) {
 
 ## `Functions`
 
-- Definition and purpose.
-- Declaring and calling functions.
-- Parameters and return values.
+Functions are fundamental building blocks in JavaScript, allowing you to define reusable code, organize your code into manageable pieces, and abstract away complex operations.
+
+- Functions are defined using the function keyword, followed by a name, a list of parameters (placeholders for variables), and a block of code. More than one parameter are separated by a comma `,`. Functions are then called by invoking the function with the arguments in parentheses. **Note:** terminology that frequently confuses students is the difference between a parameter and an argument. A parameter is the placeholder for variables in the function definition. Arguments are the actual variables supplied when calling the function. The argument does **not** need to have the same name as the parameter.
+
+```js
+function greeting(name /*this is called a parameter */) {
+  console.log("Hello", name);
+}
+
+let bitcoinFounder = "Satoshi";
+greeting(bitcoinFounder /*this is called an argument here */); // outputs "Hello Satoshi"
+
+/* reusing the function with a different argument */
+let ethereumFounder = "Vitalik";
+greeting(ethereumFounder /*this is called an argument here */); // outputs "Hello Vitalik"
+```
+
+- Functions can return values that can then be used in other parts of your code instead of just executing a sequence of code. To do this, you assign a function to a variable, and the return keyword on the last line of the function will "return" the value computed by the function to variable to which you have assigned it.
+
+```js
+function add(a, b) {
+  return a + b; // adds a and b and returns them to the variable to which the function was assigned
+}
+
+let numOne = 10;
+let numTwo = 20;
+
+let ans = add(numOne, numTwo); // assigns the sum of numOne and numTwo to ans
+console.log(ans); // outputs 30
+
+let anotherNum = 40;
+let yetAnotherNum = 60;
+
+let secondAns = add(anotherNum, yetAnotherNum);
+console.log(secondAns); // outputs 100
+```
 
 ---
