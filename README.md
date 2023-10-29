@@ -106,5 +106,6 @@ git pull origin main
 ## `10. General Resources`
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
+- [Eloquent Javascript](https://eloquentjavascript.net/)
 
 ---
