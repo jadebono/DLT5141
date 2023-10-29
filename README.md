@@ -78,34 +78,34 @@ git pull origin main
 
 ## `7. Online Tools`
 
-- [Codepen](https://codepen.io/)
-- [Fiddle](https://jsfiddle.net/)
-- [Playcode](https://playcode.io/) (Preferable)
-- [Replit](https://replit.com/)
+- **[Codepen](https://codepen.io/)**
+- **[Fiddle](https://jsfiddle.net/)**
+- **[Playcode](https://playcode.io/)** (Preferable)
+- **[Replit](https://replit.com/)**
 
 ---
 
 ## `8. Docs`
 
-- [devdocs](https://devdocs.io/)
+- **[devdocs](https://devdocs.io/)**
 
 ---
 
 ## `9. Video Tutorials`
 
-- [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
-- [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
-- [Computer Basics in 43 short videos | FreeCodeCamp](https://www.youtube.com/watch?v=q7tlgZg4Q1o&list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy)
-- [Networks in 10 short videos | FreeCodeCamp](https://www.youtube.com/watch?v=ANHx2jnaLf8&list=PLWKjhJtqVAblzbwhT83fRh5nNSHqywxrw)
-- [Learn HTML & CSS – Full Course for Beginners | FreeCodeCamp](https://youtu.be/a_iQb1lnAEQ?si=E2JRGLK-EFUqSEY_) - **Note:** Free course but the tutor urges you to sign up for a freemium account on Scrimba. This is not necessary for the purposes of completing this course on youtube.
-- [CSS Tutorial - Zero to Hero (Complete Course) | FreeCodeCamp](https://youtu.be/1Rs2ND1ryYc?si=Hv9-dflkpsSl-Zb1)
-- [Learn JavaScript - Full Course for Beginners | FreeCodeCamp](https://youtu.be/PkZNo7MFNFg?si=ZZya0N2L41SCDpbF)
+- **[How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go)** - amplified
+- **[How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1)** - full course
+- **[Computer Basics in 43 short videos | FreeCodeCamp](https://www.youtube.com/watch?v=q7tlgZg4Q1o&list=PLWKjhJtqVAbmfoj2Th9fvxhHIeqFO7wOy)**
+- **[Networks in 10 short videos | FreeCodeCamp](https://www.youtube.com/watch?v=ANHx2jnaLf8&list=PLWKjhJtqVAblzbwhT83fRh5nNSHqywxrw)**
+- **[Learn HTML & CSS – Full Course for Beginners | FreeCodeCamp](https://youtu.be/a_iQb1lnAEQ?si=E2JRGLK-EFUqSEY_)** - **Note:** Free course but the tutor urges you to sign up for a freemium account on Scrimba. This is not necessary for the purposes of completing this course on youtube.
+- **[CSS Tutorial - Zero to Hero (Complete Course) | FreeCodeCamp](https://youtu.be/1Rs2ND1ryYc?si=Hv9-dflkpsSl-Zb1)**
+- **[Learn JavaScript - Full Course for Beginners | FreeCodeCamp](https://youtu.be/PkZNo7MFNFg?si=ZZya0N2L41SCDpbF)**
 
 ---
 
 ## `10. General Resources`
 
-- [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
-- [Eloquent Javascript](https://eloquentjavascript.net/)
+- **[A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)**
+- **[Eloquent Javascript](https://eloquentjavascript.net/)**
 
 ---
