@@ -109,7 +109,13 @@ Javascript has three keywords for creating variables:
 
 To create a variable, you declare it with a keyword. You can then initialize it by giving it a value, or you can initialize later when you need it. To initialize a variable assign a value to it using the `=` operator and a value on the right-hand side. You can also update variables created using both `var` and `let` (in the same block scope) simply by assigning a new value to them.
 
-**Note:** for a number of reasons, modern javascript usage prefers creating variables using `let` within a particular scope. Furthermore, you can create new variables with the same variable names in different scopes using `let` and `const`
+**Notes:**
+
+- for a number of reasons, modern javascript usage prefers creating variables using `let` within a particular scope. Furthermore, you can create new variables with the same variable names in different scopes using `let` and `const`
+
+- You have to declare a variable using a `var` or `let` keyword. However, do not use the keyword to initialize the variable (if you didn't already do so at the time of declaration).
+
+- You can update a variable with a new value at any time (unless it is a `const` variable). Do not use a `var` or `let` keyword to update the variable.
 
 Declaring a variable and initializing it later:
 
@@ -125,8 +131,8 @@ console.log(name); // now outputs "Hal" because the value of the variable has be
 ```
 
 ```js
-var name = "Satoshi";
-let surname = "Nakamoto";
+var name = "Satoshi"; // declaring and initializing with var
+let surname = "Nakamoto"; // declaring and initializing with let - this is preferable
 const MYNUM = 21;
 
 console.log(name); // outputs "Satoshi"
@@ -171,17 +177,17 @@ let thisLanguage = "Javascript";
 let numberString = "100"; // this is a string type not a number type!
 ```
 
-- `number` - can be either an integer (in decimal, hexadecimal, octal, and binary) or floating point literal. Javascript's `number` type is a 64-bit floating point, which provides a precision of up to 15 decimal places. As far as integers are concerned, the largest safe integer `number` can represent is 9,007,199,254,740,991 and the smallest is -9,007,199,254,740,991. If you need bigger/smaller numbers, use the bigInt type (created by appending n to the number)
+- `number` - can be either an integer (in decimal, hexadecimal, octal, and binary) or floating point literal. Javascript's `number` type is a 64-bit floating point, which provides a precision of up to 15 decimal places. As far as integers are concerned, the largest safe integer `number` can represent is 9,007,199,254,740,991 and the smallest is -9,007,199,254,740,991. If you need bigger/smaller numbers, use the bigint type (created by appending n to the number)
 
 ```js
 let aNumber = 5438145; // decimal integer number type
 let aFloat = 3.45621; // decimal float number type
 ```
 
-- `bigint` - Numbers outside the range of -9,007,199,254,740,991 to 9,007,199,254,740,991 need to be represented using the `bigInt` type. To do so, simply append n to your number:
+- `bigint` - Numbers outside the range of -9,007,199,254,740,991 to 9,007,199,254,740,991 need to be represented using the `bigint` type. To do so, simply append n to your number:
 
 ```js
-let veryBigNumber = 1234567890123456789012345678901234567890n; // this is a bigInt type NOT a number type
+let veryBigNumber = 1234567890123456789012345678901234567890n; // this is a bigint type NOT a number type
 console.log(veryBigNumber); // outputs 1234567890123456789012345678901234567890n
 ```
 

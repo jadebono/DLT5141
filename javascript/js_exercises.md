@@ -17,6 +17,197 @@
 
 ---
 
+### `First Steps`
+
+Output a phrase or greeting to the terminal. Add a single line and a multiline comment to it.
+
+Hints:
+
+1. The traditional first output for a new programmer is "Hello World";
+1. Do NOT use functions for this exercise.
+
+Solution:
+
+```js
+/* this is my first program. I shall output a greeting to terminal. I shall use the console.log() function and supply it with a "Hello World" as an argument */
+console.log("Hello World"); // outputs "Hello World to the terminal
+```
+
+---
+
+### `Declaring and Initializing Variables`
+
+Declare two variables of any type you like. Initialize the first one and output it to terminal. After you output the first variable to the terminal, initialize the second one and output it to the terminal. Then update the first variable with a new value and output it again to the terminal.
+
+Hints:
+
+1. Use the `let` keyword to declare variables not the `var` keyword.
+
+```js
+let a = 10;
+let b;
+console.log(a);
+b = 15;
+console.log(b);
+a = 100;
+console.log(a);
+```
+
+---
+
+### `Declaring Global Variables and Manipulating them with a Function`
+
+Declare a global variable and initialize it and output it to terminal by means of a function.
+
+Hints:
+
+1. Place your functions at the top of your code;
+
+Solution:
+
+```js
+function useVariable() {
+  a = 10;
+  console.log(a);
+}
+
+let a; // the global variable
+useVariable(); // calling the function to initialize and output the global terminal
+```
+
+---
+
+### `Declaring and Initializing Variables of All Javascript's Types`
+
+Create and initialize variables of all Javascript's types and output them to console.
+
+Hints:
+
+- Javascript's basic types are: string, number, bigint, boolean, null, undefined, object, array.
+
+Solution:
+
+```js
+let greeting = "Hello"; // string
+let myNum = 1000; // number
+let bigNum =
+  9843827581636835686494617638746761864183875423958935893859350302302329059398438275816368356864946176387467618641838754239589358938593503023023290593984382758163683568649461763874676186418387542395893589385935030230232905939843827581636835686494617638746761864183875423958935893859350302302329059398438275816368356864946176387467618641838754239589358938593503023023290593n; //bigint
+let rich = false; // boolean
+let nullValue = null; // null
+let placeholder; // not initialized therefore undefined
+let myObject = { name: "Satoshi", surname: "Nakamoto" }; // object
+let myArr = [1, 2, 3, 4, 5]; // array
+
+console.log(greeting);
+console.log(myNum);
+console.log(bigNum);
+console.log(rich);
+console.log(nullValue);
+console.log(placeholder);
+console.log(myObject);
+console.log(myArr);
+```
+
+---
+
+### `Outputting All Types with a Loop in a Function`
+
+Take all the variables you created for the last exercise and create a function that outputs them all to terminal with a loop.
+
+Hints:
+
+1. The function should take an array as a parameter;
+1. The array parameter should contain all the variables;
+1. In the function set up a loop that loops through each of the variables in the array parameter;
+1. Remember that each item in an array is accessed like this array[index of item];
+1. To get the length of the array, use array.length;
+1. The first item in the array is `[0]` and the last is `[array.length - 1]`.
+
+Solution:
+
+```js
+function outputVariables(variableArray) {
+  let arrLength = variableArray.length;
+  /* 
+  create the for loop to cycle through the array:
+  1. declare i to use as an index;
+  2. The condition tests whether the index has reached the last item of the array which is array.length - 1;
+  3. i++ increments the index by 1
+  */
+  for (let i = 0; i <= arrLength - 1; i++) {
+    console.log(variableArray[i]);
+  }
+}
+
+let greeting = "Hello";
+let myNum = 1000;
+let bigNum =
+  9843827581636835686494617638746761864183875423958935893859350302302329059398438275816368356864946176387467618641838754239589358938593503023023290593984382758163683568649461763874676186418387542395893589385935030230232905939843827581636835686494617638746761864183875423958935893859350302302329059398438275816368356864946176387467618641838754239589358938593503023023290593n;
+let rich = false;
+let nullValue = null;
+let placeholder;
+let myObject = { name: "Satoshi", surname: "Nakamoto" };
+let myArr = [1, 2, 3, 4, 5];
+
+let arrayOfVariables = [
+  greeting,
+  myNum,
+  bigNum,
+  rich,
+  nullValue,
+  placeholder,
+  myObject,
+  myArr,
+]; // this array contains all the variables created above
+outputVariables(arrayOfVariables); // calls the function with the arrayOfVariables argument
+```
+
+---
+
+### `Using Operators`
+
+Create a variable and update it using assignment operators. Then create another variable taking as a value the result of a operated upon with a mathematical operator. Then test it using a comparison operator, and finally create an if-else block to test it using logical operators.
+
+Solution:
+
+```js
+let a = 10;
+a *= 10;
+
+let b = a / 5;
+
+let testAB = a === b;
+console.log(testAB);
+
+if (a > b) || (a < b) {
+  console.log("a is: ", a);
+  console.log("b is: ", b);
+  console.log("And a is not equal to b");
+}
+```
+
+---
+
+### `Creating a Block with a Function`
+
+Create a simple function with code in its block and execute it.
+
+Solution:
+
+```js
+function greeter() {
+  console.log("Hello World");
+}
+
+greeter();
+```
+
+---
+
+### `Conditionals`
+
+---
+
 ## `Adding JS to the Web Page`
 
 Javascript in the browser is a very different matter from javascript in node. In the browser, you need to connect the document object of the web page, and its elements, to the code, and then run code on it. This will require code that you did not cover in the [Basics of JavaScript](/javascript/javascript.md) notes. For this reason, some of the required code will be provided for you.
@@ -231,3 +422,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 ```
+
+---
