@@ -733,10 +733,32 @@ function areaOfCircle() {
 }
 
 /*
-both of the following lines output errors because the variables of areaOfCircle() is not available to the main program unless the function is called and assigned to another variable accessible to the main program
+both of the following lines output errors because the variables of areaOfCircle() are not available to the main program unless the function is called and assigned to another variable accessible to the main program
 */
 console.log(radius);
 console.log(area);
+```
+
+- However functions CAN access and modify global variables:
+
+```js
+// this function accesses and sets the global variables a and b
+function simpleFunc() {
+  // setting the global variables
+  a = 10;
+  b = 5;
+}
+
+// these are global variables and can be accessed by any function
+let a;
+let b;
+
+// calling simpleFunc() allows it to access and set the global functions
+simpleFunc();
+
+// logging the global variables a and b now outputs the values assigned to them by simpleFunc()
+console.log(a);
+console.log(b);
 ```
 
 ---
