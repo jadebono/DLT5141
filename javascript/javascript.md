@@ -227,7 +227,7 @@ console.log(myObject); // outputs { name: 'Satoshi', numberOfBitcoins: 21000000,
 console.log(myObject.name); // using dot notation to print "Satoshi"
 ```
 
-- `array` - an array is a special kind of object used to store multiple values in a single variable. It can hold more than one value (of any type) at a time, with each value accessible by a numerical index. The index starts from 0. Individual items in an array can be accessed using the index, for example array[0] returns the FIRST item in the array:
+- `array` - an array is a special kind of object used to store multiple values in a single variable. An array is enclosed by square brackets `[]` and it can hold more than one value (of any type) at a time, with each value accessible by a numerical index. The index starts from 0. Individual items in an array can be accessed using the index, for example array[0] returns the FIRST item in the array. To initialize an array, put items separated by a comma between `[]` (square brackets).
 
 ```js
 let BITCOINMAXSUPPLY = 21000000;
