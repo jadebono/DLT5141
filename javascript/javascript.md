@@ -712,4 +712,31 @@ let secondAns = add(anotherNum, yetAnotherNum);
 console.log(secondAns); // outputs 100
 ```
 
+- With functions that return values, you call them directly from another function. When this happens the calling function uses the return values of the function you pass it as an argument.
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 10)); // outputs 15 directly
+```
+
+- Code within a function block is encapsulated from the main code and is inaccessible to the main program. For example, variables declared in the function block are inaccessible to the main program:
+
+```js
+function areaOfCircle() {
+  let radius = 10;
+  let radiusSquared = Math.pow(radius, 2); // function in Math library for finding exponent
+  let area = Math.PI /*value of pi in Math library */ * radiusSquared;
+  return area;
+}
+
+/*
+both of the following lines output errors because the variables of areaOfCircle() is not available to the main program unless the function is called and assigned to another variable accessible to the main program
+*/
+console.log(radius);
+console.log(area);
+```
+
 ---
