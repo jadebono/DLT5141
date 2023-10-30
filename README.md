@@ -31,7 +31,17 @@
 
 ## `3. Cloning this Repo`
 
-To clone this repo to a local folder and open it in VS Code:
+First you need to install Git. Full instructions are on this page:
+
+[Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+verify that git is installed:
+
+```bash
+git version
+```
+
+Once you have installed git and verified its installation, you may clone this repo to a local folder and open it in VS Code:
 
 1. Navigate to a folder in which you want to download this repo;
 1. clone the repo which will download the repo into its own folder called DLT5141;
