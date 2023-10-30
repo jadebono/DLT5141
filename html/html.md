@@ -229,10 +229,10 @@ The body element represents the main content of an HTML document. There can be o
     <!-- Links the main javascript code in the root folder of your project -->
     <script src="script.js"></script>
     <title>My Website</title>
-    <body>
-      The main content of your web page goes here
-    </body>
   </head>
+  <body>
+    The main content of your web page goes here
+  </body>
 </html>
 ```
 
