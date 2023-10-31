@@ -280,6 +280,20 @@ The main element represents the dominant content of the body of a document. The 
 </html>
 ```
 
+**Note:**
+
+- Uniqueness: Ideally, there should be only one `<main>` element per page. It's meant to enclose the primary content of the document that is unique to that document and excludes content that is repeated across a set of documents such as site navigation, header, footer, or sidebars.
+- The `<main>` element must not be a descendant of an `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>` element.
+- The `<main>` element generally goes inside the `<body>` element like this:
+
+```html
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+</body>
+```
+
 **[Try it here](https://jsfiddle.net/)**
 
 **Block-Level:** main is a block-level element.
