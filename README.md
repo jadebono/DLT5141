@@ -6,6 +6,7 @@
 
 - [1. How the Web Works](#1-how-the-web-works)
 - [2. Getting Started with VS Code](#2-getting-started-with-vs-code)
+- [3. Microsoft PowerShell](#3-microsoft-powershell)
 - [3. Cloning this Repo](#3-cloning-this-repo)
 - [4. Basics of HTML](#4-basics-of-html)
 - [5. Basics of CSS](#5-basics-of-css)
@@ -29,7 +30,15 @@
 
 ---
 
-## `3. Cloning this Repo`
+## `3. Microsoft PowerShell`
+
+- [Basic Commands of Microsoft PowerShell](/powershell.md)
+
+---
+
+## `4. Cloning this Repo`
+
+**Note:** The commands here will work with both Linux's bash and Microsoft's PowerShell.
 
 First you need to install Git. Full instructions are on this page:
 
@@ -64,7 +73,7 @@ git pull origin main
 
 ---
 
-## `4. Basics of HTML`
+## `5. Basics of HTML`
 
 - [Basics of HTML Elements and Attributes](/html/html.md)
 - [HTML Exercises](/html/html_exercises.md)
@@ -72,21 +81,21 @@ git pull origin main
 
 ---
 
-## `5. Basics of CSS`
+## `6. Basics of CSS`
 
 - [Basic Concepts of CSS](/css/css.md)
 - [CSS Exercises](/css/css_exercises.md)
 
 ---
 
-## `6. Basics of Javascript`
+## `7. Basics of Javascript`
 
 - [Basics of JavaScript](/javascript/javascript.md)
 - [Javascript Exercises](/javascript/js_exercises.md)
 
 ---
 
-## `7. Online Tools`
+## `8. Online Tools`
 
 - [Codepen](https://codepen.io/)
 - [Fiddle](https://jsfiddle.net/)
@@ -95,13 +104,13 @@ git pull origin main
 
 ---
 
-## `8. Docs`
+## `9. Docs`
 
 - [devdocs](https://devdocs.io/)
 
 ---
 
-## `9. Video Tutorials`
+## `10. Video Tutorials`
 
 - [How Does the Internet Work? | Glad You Asked S1](https://youtu.be/TNQsmPf24go) - amplified
 - [How Does the Internet Work? | FreeCodeCamp](https://youtu.be/zN8YNNHcaZc?t=1) - full course
@@ -113,7 +122,7 @@ git pull origin main
 
 ---
 
-## `10. General Resources`
+## `11. General Resources`
 
 - [A Handbook of HTML and CSS || FreeCodeCamp](https://www.freecodecamp.org/news/html-css-handbook-for-beginners/)
 - [Eloquent Javascript](https://eloquentjavascript.net/)

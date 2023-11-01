@@ -86,13 +86,13 @@ Solution:
 
 ---
 
-## `Question 2 - The html tag`
+## `Question 2 - The html element`
 
-Insert an html tag into which to put the rest of the document.
+Insert an `<html>` element into which to put the rest of the document.
 
 Hints:
 
-1. The <html> HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+1. The `<html>` element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
 
 Solution:
 
@@ -103,13 +103,13 @@ Solution:
 
 ---
 
-## `Question 3 - The head tag`
+## `Question 3 - The head element`
 
-Insert a head element at the top of your html element.
+Insert a `<head>` element at the top of your html element.
 
 Hints:
 
-1. The <head> HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+1. The `<head>` element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
 
 Solution:
 
@@ -124,7 +124,7 @@ Solution:
 
 ## `Question 3 - The meta tag`
 
-Insert two meta tags at the top of your head element. Add the following attributes with values in your meta tags:
+Insert two `<meta>` tags at the top of your head element. Add the following attributes with values in your meta tags:
 
 1. 1st meta tag: charset="UTF-8";
 1. 2nd meta tag: name="viewport" content="width=device-width, initial-scale=1.0"
@@ -147,9 +147,9 @@ Solution:
 
 ---
 
-## `Question 4 - The title tag`
+## `Question 4 - The title element`
 
-Insert a title element under your meta tags. The title tag should contain the text: Roast Leg of Lamb.
+Insert a `<title>` element under your meta tags. The title tag should contain the text: Roast Leg of Lamb.
 
 Hints:
 
@@ -171,9 +171,9 @@ Solution:
 
 ---
 
-## `Question 5 - The body tag`
+## `Question 5 - The body element`
 
-Insert a body element under the head element.
+Insert a `<body>` element under the head element.
 
 Hints:
 
@@ -310,23 +310,9 @@ Solution:
 
 ---
 
-## `Question 10 - Insert a main element`
+## `Question 10 - Insert a header element`
 
-At the top of your `<body>` element, insert a `<main>` element.
-
-Solution:
-
-```html
-<body>
-  <main></main>
-</body>
-```
-
----
-
-## `Question 11 - Insert a header Element`
-
-At the top of your `<main>` element, insert a `<header>` element and inside it nest an `<h1>` element. Give your `<h1>` element a title such as "Roast Leg of Lamb by Jamie Oliver". This will be the main title of your web page.
+At the top of your `<body>` element, insert a `<header>` element and inside it nest an `<h1>` element. Give your `<h1>` element a title such as "Roast Leg of Lamb by Jamie Oliver". This will be the main title of your web page.
 
 Solution:
 
@@ -334,6 +320,23 @@ Solution:
 <header>
   <h1>Roast Leg of Lamb by Jamie Oliver</h1>
 </header>
+```
+
+---
+
+## `Question 11 - Insert a main element`
+
+Under your `<header>` element, insert a `<main>` element.
+
+Solution:
+
+```html
+<body>
+  <header>
+    <h1>Roast Leg of Lamb by Jamie Oliver</h1>
+  </header>
+  <main></main>
+</body>
 ```
 
 ---
@@ -346,7 +349,7 @@ In the next cluster of questions, you will create your first visual element of t
 
 ## `Question 12 - Create a div`
 
-Under the `<header>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients". "grid-containter" is the parent container of your grid, while "ingredient" is its first child element, the first cell in the two-celled row that our table will consist of.
+At the top of the `<main>` element, create a `<div>` element. Give it a class name of "grid-container". In the div, nest a `<section>` element with a class name of "ingredients". "grid-containter" is the parent container of your grid, while "ingredient" is its first child element, the first cell in the two-celled row that our table will consist of.
 
 Solution:
 
