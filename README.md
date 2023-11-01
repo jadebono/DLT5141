@@ -7,14 +7,14 @@
 - [1. How the Web Works](#1-how-the-web-works)
 - [2. Getting Started with VS Code](#2-getting-started-with-vs-code)
 - [3. Microsoft PowerShell](#3-microsoft-powershell)
-- [3. Cloning this Repo](#3-cloning-this-repo)
-- [4. Basics of HTML](#4-basics-of-html)
-- [5. Basics of CSS](#5-basics-of-css)
-- [6. Basics of Javascript](#6-basics-of-javascript)
-- [7. Online Tools](#7-online-tools)
-- [8. Docs](#8-docs)
-- [9. Video Tutorials](#9-video-tutorials)
-- [10. General Resources](#10-general-resources)
+- [4. Cloning this Repo](#4-cloning-this-repo)
+- [5. Basics of HTML](#5-basics-of-html)
+- [6. Basics of CSS](#6-basics-of-css)
+- [7. Basics of Javascript](#7-basics-of-javascript)
+- [8. Online Tools](#8-online-tools)
+- [9. Docs](#9-docs)
+- [10. Video Tutorials](#10-video-tutorials)
+- [11. General Resources](#11-general-resources)
 
 ---
 
